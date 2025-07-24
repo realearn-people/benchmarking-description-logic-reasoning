@@ -1,0 +1,582 @@
+[
+  {
+    "id": "test_1",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every UnclosedPizza have hasTopping.MozzarellaTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_2",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every LeekTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_3",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every NutTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_4",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Capricciosa have hasTopping.AnchoviesTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_5",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every FruttiDiMare have hasTopping.TomatoTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_6",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every OliveTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_7",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every MozzarellaTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_8",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every SundriedTomatoTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_9",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every ParmesanTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_10",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every PolloAdAstra have hasTopping.CajunSpiceTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_11",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every HotGreenPepperTopping have hasSpiciness.Hot?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_12",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Veneziana have hasTopping.CaperTopping?",
+    "expected": "No",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes.",
+    "match": "No"
+  },
+  {
+    "id": "test_13",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every American have hasTopping.MozzarellaTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_14",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every QuattroFormaggi have hasTopping.TomatoTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_15",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Rosa have hasTopping.GorgonzolaTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_16",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every PrinceCarlo have hasTopping.TomatoTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_17",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every TobascoPepperSauce have hasSpiciness.Hot?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_18",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every MushroomTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_19",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Giardiniera have hasTopping.MozzarellaTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_20",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every SweetPepperTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_21",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Mushroom have hasTopping.MozzarellaTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_22",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every SloppyGiuseppe have hasTopping.HotSpicedBeefTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_23",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every AmericanHot have hasTopping.MozzarellaTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_24",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every GarlicTopping have hasSpiciness.Medium?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_25",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every PetitPoisTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_26",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Fiorentina have hasTopping.TomatoTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_27",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every SlicedTomatoTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_28",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every CaperTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_29",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every TomatoTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_30",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Parmense have hasTopping.TomatoTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_31",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every CajunSpiceTopping have hasSpiciness.Hot?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_32",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Cajun have hasTopping.OnionTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_33",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every FishTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_34",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every ArtichokeTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_35",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every PeperonataTopping have hasSpiciness.Medium?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_36",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every PeperoniSausageTopping have hasSpiciness.Medium?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_37",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Margherita have hasTopping.TomatoTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_38",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Soho have hasTopping.OliveTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_39",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every OnionTopping have hasSpiciness.Medium?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_40",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every ChickenTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_41",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every IceCream have hasTopping.FruitTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_42",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every LaReine have hasTopping.MushroomTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_43",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every AsparagusTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_44",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every JalapenoPepperTopping have hasSpiciness.Hot?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_45",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every FourSeasons have hasTopping.OliveTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_46",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every SpinachTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_47",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every GoatsCheeseTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_48",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Siciliana have hasTopping.TomatoTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_49",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every ParmaHamTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_50",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every RosemaryTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes.",
+    "match": "No"
+  },
+  {
+    "id": "test_51",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every RocketTopping have hasSpiciness.Medium?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_52",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every HotSpicedBeefTopping have hasSpiciness.Hot?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_53",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Napoletana have hasTopping.TomatoTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_54",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every SultanaTopping have hasSpiciness.Medium?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_55",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every FourCheesesTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_56",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every GorgonzolaTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_57",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Pizza have hasBase.PizzaBase?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_58",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Caprina have hasTopping.MozzarellaTopping?",
+    "expected": "Yes",
+    "llm": "gpt-4o",
+    "gpt_answer": "Yes",
+    "match": "Yes"
+  }
+]
