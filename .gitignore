@@ -1,0 +1,18 @@
+# macOS system junk
+.DS_Store
+
+# Environment variables
+.env
+*.env
+
+# Build artifacts
+target/
+*.class
+
+# IntelliJ / JetBrains IDE
+.idea/
+*.iml
+
+# Python
+__pycache__/
+*.pyc
