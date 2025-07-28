@@ -132,7 +132,7 @@ def evaluate(input_file, output_file, model_name):
 # === 6. Runner ===
 if __name__ == "__main__":
     models = ["llama3:latest", "gemma3:latest"]
-    #"gpt-4o", "gemini-2.5-pro", "llama3", "gemma3:latest"
+    #"gpt-4o", "gemini-2.5-pro", "llama3:latest", "gemma3:latest"
 
     for model in models:
         print(f"\n Running {model} on EL")

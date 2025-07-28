@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
  * - {@link ReasoningValidator} to check entailment
  * - {@link AxiomFormatter} to output human-readable symbolic/formal axiom representations
  *
- * The output is saved to `benchmark_output.json`, containing only MR-0 (original EL cases).
+ * The output is saved to `benchmark_output.json`, containing only original EL cases.
  */
 public class BenchmarkRunner {
 

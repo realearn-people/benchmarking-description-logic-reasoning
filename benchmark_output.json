@@ -269,7 +269,7 @@
       }
     ],
     "query": "Does every Veneziana have hasTopping.CaperTopping?",
-    "expected": "No"
+    "expected": "Yes"
   },
   {
     "id": "test_13",

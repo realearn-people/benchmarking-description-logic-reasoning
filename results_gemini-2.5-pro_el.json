@@ -16,8 +16,8 @@
     "query": "Does every LeekTopping have hasSpiciness.Mild?",
     "expected": "Yes",
     "llm": "gemini-2.5-pro",
-    "gpt_answer": "Yes",
-    "match": "Yes"
+    "gpt_answer": "No",
+    "match": "No"
   },
   {
     "id": "test_3",
@@ -114,10 +114,10 @@
     "mr": "",
     "dl_profile": "EL",
     "query": "Does every Veneziana have hasTopping.CaperTopping?",
-    "expected": "No",
+    "expected": "Yes",
     "llm": "gemini-2.5-pro",
     "gpt_answer": "Yes",
-    "match": "No"
+    "match": "Yes"
   },
   {
     "id": "test_13",

@@ -15,7 +15,7 @@ public class ReasoningValidator {
      * @return true if the axiom is entailed, false otherwise
      */
     public static boolean isEntailed(OWLOntology ontology, OWLAxiom axiom) {
-        // Use Structural Reasoner Factory
+        // Use Structural Reasoner Factory (owl)
         OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
         OWLReasoner reasoner = reasonerFactory.createReasoner(ontology);
         boolean entailed = false;

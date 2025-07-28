@@ -12,7 +12,6 @@ import java.util.*;
  */
 public class AxiomFormatter {
 
-
     /**
      * Converts an OWLAxiom into both symbolic and functional formats.
      *

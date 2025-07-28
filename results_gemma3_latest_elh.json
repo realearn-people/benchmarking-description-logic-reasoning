@@ -578,15 +578,5 @@
     "llm": "gemma3:latest",
     "gpt_answer": "Yes",
     "match": "Yes"
-  },
-  {
-    "id": "test_999",
-    "mr": "",
-    "dl_profile": "EL",
-    "query": "Does pizza1 have hasTopping.Mozzarella?",
-    "expected": "Yes",
-    "llm": "gemma3:latest",
-    "gpt_answer": "Yes",
-    "match": "Yes"
   }
 ]

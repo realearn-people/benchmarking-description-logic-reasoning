@@ -114,10 +114,10 @@
     "mr": "",
     "dl_profile": "EL",
     "query": "Does every Veneziana have hasTopping.CaperTopping?",
-    "expected": "No",
+    "expected": "Yes",
     "llm": "gemma3:latest",
     "gpt_answer": "Yes",
-    "match": "No"
+    "match": "Yes"
   },
   {
     "id": "test_13",

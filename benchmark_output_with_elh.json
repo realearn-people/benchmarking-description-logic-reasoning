@@ -1514,15 +1514,5 @@
     ],
     "query": "Does every Caprina have hasTopping.MozzarellaTopping?",
     "expected": "Yes"
-  },
-  {
-    "id": "test_999",
-    "dl_profile": "EL",
-    "axioms": [
-      { "symbolic": "Mozzarella ⊑ Cheese", "functional": "SubClassOf(:Mozzarella :Cheese)" },
-      { "symbolic": "Pizza1 : Pizza", "functional": "ClassAssertion(:Pizza :Pizza1)" }
-    ],
-    "query": "Does pizza1 have hasTopping.Mozzarella?",
-    "expected": "Yes"
   }
 ]

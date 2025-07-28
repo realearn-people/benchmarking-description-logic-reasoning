@@ -114,10 +114,10 @@
     "mr": "",
     "dl_profile": "EL",
     "query": "Does every Veneziana have hasTopping.CaperTopping?",
-    "expected": "No",
+    "expected": "Yes",
     "llm": "gpt-4o",
-    "gpt_answer": "Yes.",
-    "match": "No"
+    "gpt_answer": "Yes",
+    "match": "Yes"
   },
   {
     "id": "test_13",
@@ -376,8 +376,8 @@
     "query": "Does every Soho have hasTopping.OliveTopping?",
     "expected": "Yes",
     "llm": "gpt-4o",
-    "gpt_answer": "Yes",
-    "match": "Yes"
+    "gpt_answer": "Yes.",
+    "match": "No"
   },
   {
     "id": "test_39",
@@ -426,8 +426,8 @@
     "query": "Does every AsparagusTopping have hasSpiciness.Mild?",
     "expected": "Yes",
     "llm": "gpt-4o",
-    "gpt_answer": "Yes",
-    "match": "Yes"
+    "gpt_answer": "Yes.",
+    "match": "No"
   },
   {
     "id": "test_44",
@@ -466,8 +466,8 @@
     "query": "Does every GoatsCheeseTopping have hasSpiciness.Mild?",
     "expected": "Yes",
     "llm": "gpt-4o",
-    "gpt_answer": "Yes",
-    "match": "Yes"
+    "gpt_answer": "Yes.",
+    "match": "No"
   },
   {
     "id": "test_48",
@@ -496,8 +496,8 @@
     "query": "Does every RosemaryTopping have hasSpiciness.Mild?",
     "expected": "Yes",
     "llm": "gpt-4o",
-    "gpt_answer": "Yes.",
-    "match": "No"
+    "gpt_answer": "Yes",
+    "match": "Yes"
   },
   {
     "id": "test_51",

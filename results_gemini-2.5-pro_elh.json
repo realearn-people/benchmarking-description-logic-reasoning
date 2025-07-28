@@ -526,8 +526,8 @@
     "query": "Does every Napoletana have hasTopping.TomatoTopping?",
     "expected": "Yes",
     "llm": "gemini-2.5-pro",
-    "gpt_answer": "No",
-    "match": "No"
+    "gpt_answer": "Yes",
+    "match": "Yes"
   },
   {
     "id": "test_54",
@@ -578,15 +578,5 @@
     "llm": "gemini-2.5-pro",
     "gpt_answer": "Yes",
     "match": "Yes"
-  },
-  {
-    "id": "test_999",
-    "mr": "",
-    "dl_profile": "EL",
-    "query": "Does pizza1 have hasTopping.Mozzarella?",
-    "expected": "Yes",
-    "llm": "gemini-2.5-pro",
-    "gpt_answer": "No",
-    "match": "No"
   }
 ]

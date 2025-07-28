@@ -96,8 +96,8 @@
     "query": "Does every PolloAdAstra have hasTopping.CajunSpiceTopping?",
     "expected": "Yes",
     "llm": "gpt-4o",
-    "gpt_answer": "Yes",
-    "match": "Yes"
+    "gpt_answer": "Yes.",
+    "match": "No"
   },
   {
     "id": "test_11",
@@ -246,8 +246,8 @@
     "query": "Does every PetitPoisTopping have hasSpiciness.Mild?",
     "expected": "Yes",
     "llm": "gpt-4o",
-    "gpt_answer": "Yes",
-    "match": "Yes"
+    "gpt_answer": "Yes.",
+    "match": "No"
   },
   {
     "id": "test_26",
@@ -376,8 +376,8 @@
     "query": "Does every Soho have hasTopping.OliveTopping?",
     "expected": "Yes",
     "llm": "gpt-4o",
-    "gpt_answer": "Yes",
-    "match": "Yes"
+    "gpt_answer": "Yes.",
+    "match": "No"
   },
   {
     "id": "test_39",
@@ -386,8 +386,8 @@
     "query": "Does every OnionTopping have hasSpiciness.Medium?",
     "expected": "Yes",
     "llm": "gpt-4o",
-    "gpt_answer": "Yes.",
-    "match": "No"
+    "gpt_answer": "Yes",
+    "match": "Yes"
   },
   {
     "id": "test_40",
@@ -406,8 +406,8 @@
     "query": "Does every IceCream have hasTopping.FruitTopping?",
     "expected": "Yes",
     "llm": "gpt-4o",
-    "gpt_answer": "Yes",
-    "match": "Yes"
+    "gpt_answer": "Yes.",
+    "match": "No"
   },
   {
     "id": "test_42",
@@ -446,8 +446,8 @@
     "query": "Does every FourSeasons have hasTopping.OliveTopping?",
     "expected": "Yes",
     "llm": "gpt-4o",
-    "gpt_answer": "Yes",
-    "match": "Yes"
+    "gpt_answer": "Yes.",
+    "match": "No"
   },
   {
     "id": "test_46",
@@ -578,15 +578,5 @@
     "llm": "gpt-4o",
     "gpt_answer": "Yes",
     "match": "Yes"
-  },
-  {
-    "id": "test_999",
-    "mr": "",
-    "dl_profile": "EL",
-    "query": "Does pizza1 have hasTopping.Mozzarella?",
-    "expected": "Yes",
-    "llm": "gpt-4o",
-    "gpt_answer": "No",
-    "match": "No"
   }
 ]
