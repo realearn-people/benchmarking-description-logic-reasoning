@@ -16,3 +16,13 @@ target/
 # Python
 __pycache__/
 *.pyc
+
+# Ignore LaTeX build files
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.pdf
