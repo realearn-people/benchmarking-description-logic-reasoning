@@ -54,6 +54,9 @@ Run: `evaluate_LLMs.py`
     - `gemini-2.5-pro`
     - `llama3:latest`
     - `gemma3:latest`
+    - `deepseek-coder:6.7b-instruct`
+    - `qwen:7b`
+    - `mistral:latest`
 
 ---
 

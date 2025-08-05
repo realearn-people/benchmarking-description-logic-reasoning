@@ -17,10 +17,10 @@ genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 GEMINI_MODEL = genai.GenerativeModel("gemini-2.5-pro")
 
 # === 2. File Paths ===
-INPUT_FILE_EL = "../output_StructuralReasoner/benchmark_output.json"
+INPUT_FILE_EL = "../output_HermitReasoner/benchmark_output.json"
 OUTPUT_FILE_EL = "../results_{model}_el.json"
 
-INPUT_FILE_ELH = "../output_StructuralReasoner/benchmark_output_with_elh.json"
+INPUT_FILE_ELH = "../output_HermitReasoner/benchmark_output_with_elh.json"
 OUTPUT_FILE_ELH = "../results_{model}_elh.json"
 
 # === 3. Prompt Builder ===
