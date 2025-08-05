@@ -36,12 +36,12 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "NutTopping ⊑ ∃hasSpiciness.Mild",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#NutTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Mild\u003e))"
-      },
-      {
         "symbolic": "NutTopping ⊑ Thing",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#NutTopping\u003e owl:Thing)"
+      },
+      {
+        "symbolic": "NutTopping ⊑ ∃hasSpiciness.Mild",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#NutTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Mild\u003e))"
       }
     ],
     "query": "Does every NutTopping have hasSpiciness.Mild?",
@@ -52,39 +52,39 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "Capricciosa ⊑ ∃hasTopping.AnchoviesTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Capricciosa\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#AnchoviesTopping\u003e))"
-      },
-      {
-        "symbolic": "Capricciosa ⊑ ∃hasTopping.PeperonataTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Capricciosa\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#PeperonataTopping\u003e))"
-      },
-      {
         "symbolic": "Capricciosa ⊑ ∃hasTopping.CaperTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Capricciosa\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#CaperTopping\u003e))"
-      },
-      {
-        "symbolic": "Capricciosa ⊑ ∃hasTopping.OliveTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Capricciosa\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#OliveTopping\u003e))"
       },
       {
         "symbolic": "Capricciosa ⊑ ∃hasTopping.TomatoTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Capricciosa\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
       },
       {
-        "symbolic": "Capricciosa ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Capricciosa\u003e owl:Thing)"
+        "symbolic": "Capricciosa ⊑ ∃hasTopping.AnchoviesTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Capricciosa\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#AnchoviesTopping\u003e))"
       },
       {
         "symbolic": "Capricciosa ⊑ ∃hasTopping.MozzarellaTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Capricciosa\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
       },
       {
+        "symbolic": "Capricciosa ⊑ ∃hasTopping.OliveTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Capricciosa\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#OliveTopping\u003e))"
+      },
+      {
         "symbolic": "Capricciosa ⊑ ∃hasTopping.HamTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Capricciosa\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#HamTopping\u003e))"
+      },
+      {
+        "symbolic": "Capricciosa ⊑ ∃hasTopping.PeperonataTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Capricciosa\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#PeperonataTopping\u003e))"
+      },
+      {
+        "symbolic": "Capricciosa ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Capricciosa\u003e owl:Thing)"
       }
     ],
-    "query": "Does every Capricciosa have hasTopping.AnchoviesTopping?",
+    "query": "Does every Capricciosa have hasTopping.CaperTopping?",
     "expected": "Yes"
   },
   {
@@ -92,23 +92,23 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "FruttiDiMare ⊑ ∃hasTopping.TomatoTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FruttiDiMare\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
+        "symbolic": "FruttiDiMare ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FruttiDiMare\u003e owl:Thing)"
       },
       {
         "symbolic": "FruttiDiMare ⊑ ∃hasTopping.GarlicTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FruttiDiMare\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#GarlicTopping\u003e))"
       },
       {
-        "symbolic": "FruttiDiMare ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FruttiDiMare\u003e owl:Thing)"
-      },
-      {
         "symbolic": "FruttiDiMare ⊑ ∃hasTopping.MixedSeafoodTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FruttiDiMare\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MixedSeafoodTopping\u003e))"
+      },
+      {
+        "symbolic": "FruttiDiMare ⊑ ∃hasTopping.TomatoTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FruttiDiMare\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
       }
     ],
-    "query": "Does every FruttiDiMare have hasTopping.TomatoTopping?",
+    "query": "Does every FruttiDiMare have hasTopping.GarlicTopping?",
     "expected": "Yes"
   },
   {
@@ -116,12 +116,12 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "OliveTopping ⊑ ∃hasSpiciness.Mild",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#OliveTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Mild\u003e))"
-      },
-      {
         "symbolic": "OliveTopping ⊑ Thing",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#OliveTopping\u003e owl:Thing)"
+      },
+      {
+        "symbolic": "OliveTopping ⊑ ∃hasSpiciness.Mild",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#OliveTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Mild\u003e))"
       }
     ],
     "query": "Does every OliveTopping have hasSpiciness.Mild?",
@@ -148,12 +148,12 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "SundriedTomatoTopping ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SundriedTomatoTopping\u003e owl:Thing)"
-      },
-      {
         "symbolic": "SundriedTomatoTopping ⊑ ∃hasSpiciness.Mild",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SundriedTomatoTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Mild\u003e))"
+      },
+      {
+        "symbolic": "SundriedTomatoTopping ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SundriedTomatoTopping\u003e owl:Thing)"
       }
     ],
     "query": "Does every SundriedTomatoTopping have hasSpiciness.Mild?",
@@ -180,39 +180,39 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "PolloAdAstra ⊑ ∃hasTopping.CajunSpiceTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PolloAdAstra\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#CajunSpiceTopping\u003e))"
-      },
-      {
-        "symbolic": "PolloAdAstra ⊑ ∃hasTopping.SweetPepperTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PolloAdAstra\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#SweetPepperTopping\u003e))"
-      },
-      {
         "symbolic": "PolloAdAstra ⊑ ∃hasTopping.RedOnionTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PolloAdAstra\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#RedOnionTopping\u003e))"
-      },
-      {
-        "symbolic": "PolloAdAstra ⊑ ∃hasTopping.ChickenTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PolloAdAstra\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#ChickenTopping\u003e))"
-      },
-      {
-        "symbolic": "PolloAdAstra ⊑ ∃hasTopping.TomatoTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PolloAdAstra\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
-      },
-      {
-        "symbolic": "PolloAdAstra ⊑ ∃hasTopping.GarlicTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PolloAdAstra\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#GarlicTopping\u003e))"
       },
       {
         "symbolic": "PolloAdAstra ⊑ Thing",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PolloAdAstra\u003e owl:Thing)"
       },
       {
+        "symbolic": "PolloAdAstra ⊑ ∃hasTopping.GarlicTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PolloAdAstra\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#GarlicTopping\u003e))"
+      },
+      {
+        "symbolic": "PolloAdAstra ⊑ ∃hasTopping.SweetPepperTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PolloAdAstra\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#SweetPepperTopping\u003e))"
+      },
+      {
+        "symbolic": "PolloAdAstra ⊑ ∃hasTopping.TomatoTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PolloAdAstra\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
+      },
+      {
+        "symbolic": "PolloAdAstra ⊑ ∃hasTopping.ChickenTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PolloAdAstra\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#ChickenTopping\u003e))"
+      },
+      {
         "symbolic": "PolloAdAstra ⊑ ∃hasTopping.MozzarellaTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PolloAdAstra\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
+      },
+      {
+        "symbolic": "PolloAdAstra ⊑ ∃hasTopping.CajunSpiceTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PolloAdAstra\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#CajunSpiceTopping\u003e))"
       }
     ],
-    "query": "Does every PolloAdAstra have hasTopping.CajunSpiceTopping?",
+    "query": "Does every PolloAdAstra have hasTopping.RedOnionTopping?",
     "expected": "Yes"
   },
   {
@@ -220,12 +220,12 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "HotGreenPepperTopping ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#HotGreenPepperTopping\u003e owl:Thing)"
-      },
-      {
         "symbolic": "HotGreenPepperTopping ⊑ ∃hasSpiciness.Hot",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#HotGreenPepperTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Hot\u003e))"
+      },
+      {
+        "symbolic": "HotGreenPepperTopping ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#HotGreenPepperTopping\u003e owl:Thing)"
       }
     ],
     "query": "Does every HotGreenPepperTopping have hasSpiciness.Hot?",
@@ -236,10 +236,6 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "Veneziana ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Veneziana\u003e owl:Thing)"
-      },
-      {
         "symbolic": "Veneziana ⊑ ∃hasTopping.CaperTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Veneziana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#CaperTopping\u003e))"
       },
@@ -248,12 +244,16 @@
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Veneziana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
       },
       {
+        "symbolic": "Veneziana ⊑ ∃hasTopping.TomatoTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Veneziana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
+      },
+      {
         "symbolic": "Veneziana ⊑ ∃hasTopping.PineKernels",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Veneziana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#PineKernels\u003e))"
       },
       {
-        "symbolic": "Veneziana ⊑ ∃hasTopping.TomatoTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Veneziana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
+        "symbolic": "Veneziana ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Veneziana\u003e owl:Thing)"
       },
       {
         "symbolic": "Veneziana ⊑ ∃hasTopping.OliveTopping",
@@ -276,23 +276,23 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "American ⊑ ∃hasTopping.MozzarellaTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#American\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
-      },
-      {
         "symbolic": "American ⊑ Thing",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#American\u003e owl:Thing)"
+      },
+      {
+        "symbolic": "American ⊑ ∃hasTopping.PeperoniSausageTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#American\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#PeperoniSausageTopping\u003e))"
       },
       {
         "symbolic": "American ⊑ ∃hasTopping.TomatoTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#American\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
       },
       {
-        "symbolic": "American ⊑ ∃hasTopping.PeperoniSausageTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#American\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#PeperoniSausageTopping\u003e))"
+        "symbolic": "American ⊑ ∃hasTopping.MozzarellaTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#American\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
       }
     ],
-    "query": "Does every American have hasTopping.MozzarellaTopping?",
+    "query": "Does every American have hasTopping.PeperoniSausageTopping?",
     "expected": "Yes"
   },
   {
@@ -300,12 +300,12 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "QuattroFormaggi ⊑ ∃hasTopping.TomatoTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#QuattroFormaggi\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
-      },
-      {
         "symbolic": "QuattroFormaggi ⊑ Thing",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#QuattroFormaggi\u003e owl:Thing)"
+      },
+      {
+        "symbolic": "QuattroFormaggi ⊑ ∃hasTopping.TomatoTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#QuattroFormaggi\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
       },
       {
         "symbolic": "QuattroFormaggi ⊑ ∃hasTopping.FourCheesesTopping",
@@ -320,23 +320,23 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "Rosa ⊑ ∃hasTopping.GorgonzolaTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Rosa\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#GorgonzolaTopping\u003e))"
-      },
-      {
-        "symbolic": "Rosa ⊑ ∃hasTopping.TomatoTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Rosa\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
+        "symbolic": "Rosa ⊑ ∃hasTopping.MozzarellaTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Rosa\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
       },
       {
         "symbolic": "Rosa ⊑ Thing",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Rosa\u003e owl:Thing)"
       },
       {
-        "symbolic": "Rosa ⊑ ∃hasTopping.MozzarellaTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Rosa\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
+        "symbolic": "Rosa ⊑ ∃hasTopping.TomatoTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Rosa\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
+      },
+      {
+        "symbolic": "Rosa ⊑ ∃hasTopping.GorgonzolaTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Rosa\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#GorgonzolaTopping\u003e))"
       }
     ],
-    "query": "Does every Rosa have hasTopping.GorgonzolaTopping?",
+    "query": "Does every Rosa have hasTopping.MozzarellaTopping?",
     "expected": "Yes"
   },
   {
@@ -344,12 +344,16 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "PrinceCarlo ⊑ ∃hasTopping.TomatoTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PrinceCarlo\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
+        "symbolic": "PrinceCarlo ⊑ ∃hasTopping.RosemaryTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PrinceCarlo\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#RosemaryTopping\u003e))"
       },
       {
         "symbolic": "PrinceCarlo ⊑ ∃hasTopping.MozzarellaTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PrinceCarlo\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
+      },
+      {
+        "symbolic": "PrinceCarlo ⊑ ∃hasTopping.TomatoTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PrinceCarlo\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
       },
       {
         "symbolic": "PrinceCarlo ⊑ ∃hasTopping.LeekTopping",
@@ -360,15 +364,11 @@
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PrinceCarlo\u003e owl:Thing)"
       },
       {
-        "symbolic": "PrinceCarlo ⊑ ∃hasTopping.RosemaryTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PrinceCarlo\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#RosemaryTopping\u003e))"
-      },
-      {
         "symbolic": "PrinceCarlo ⊑ ∃hasTopping.ParmesanTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PrinceCarlo\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#ParmesanTopping\u003e))"
       }
     ],
-    "query": "Does every PrinceCarlo have hasTopping.TomatoTopping?",
+    "query": "Does every PrinceCarlo have hasTopping.RosemaryTopping?",
     "expected": "Yes"
   },
   {
@@ -392,12 +392,12 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "MushroomTopping ⊑ ∃hasSpiciness.Mild",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#MushroomTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Mild\u003e))"
-      },
-      {
         "symbolic": "MushroomTopping ⊑ Thing",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#MushroomTopping\u003e owl:Thing)"
+      },
+      {
+        "symbolic": "MushroomTopping ⊑ ∃hasSpiciness.Mild",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#MushroomTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Mild\u003e))"
       }
     ],
     "query": "Does every MushroomTopping have hasSpiciness.Mild?",
@@ -408,43 +408,43 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "Giardiniera ⊑ ∃hasTopping.MozzarellaTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Giardiniera\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
+        "symbolic": "Giardiniera ⊑ ∃hasTopping.MushroomTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Giardiniera\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MushroomTopping\u003e))"
       },
       {
         "symbolic": "Giardiniera ⊑ ∃hasTopping.OliveTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Giardiniera\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#OliveTopping\u003e))"
       },
       {
-        "symbolic": "Giardiniera ⊑ ∃hasTopping.LeekTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Giardiniera\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#LeekTopping\u003e))"
-      },
-      {
-        "symbolic": "Giardiniera ⊑ ∃hasTopping.SlicedTomatoTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Giardiniera\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#SlicedTomatoTopping\u003e))"
-      },
-      {
-        "symbolic": "Giardiniera ⊑ ∃hasTopping.PeperonataTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Giardiniera\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#PeperonataTopping\u003e))"
+        "symbolic": "Giardiniera ⊑ ∃hasTopping.MozzarellaTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Giardiniera\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
       },
       {
         "symbolic": "Giardiniera ⊑ Thing",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Giardiniera\u003e owl:Thing)"
       },
       {
-        "symbolic": "Giardiniera ⊑ ∃hasTopping.MushroomTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Giardiniera\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MushroomTopping\u003e))"
+        "symbolic": "Giardiniera ⊑ ∃hasTopping.SlicedTomatoTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Giardiniera\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#SlicedTomatoTopping\u003e))"
       },
       {
         "symbolic": "Giardiniera ⊑ ∃hasTopping.TomatoTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Giardiniera\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
       },
       {
+        "symbolic": "Giardiniera ⊑ ∃hasTopping.LeekTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Giardiniera\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#LeekTopping\u003e))"
+      },
+      {
         "symbolic": "Giardiniera ⊑ ∃hasTopping.PetitPoisTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Giardiniera\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#PetitPoisTopping\u003e))"
+      },
+      {
+        "symbolic": "Giardiniera ⊑ ∃hasTopping.PeperonataTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Giardiniera\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#PeperonataTopping\u003e))"
       }
     ],
-    "query": "Does every Giardiniera have hasTopping.MozzarellaTopping?",
+    "query": "Does every Giardiniera have hasTopping.MushroomTopping?",
     "expected": "Yes"
   },
   {
@@ -468,29 +468,65 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "Mushroom ⊑ ∃hasTopping.MozzarellaTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Mushroom\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
-      },
-      {
-        "symbolic": "Mushroom ⊑ ∃hasTopping.MushroomTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Mushroom\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MushroomTopping\u003e))"
+        "symbolic": "Mushroom ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Mushroom\u003e owl:Thing)"
       },
       {
         "symbolic": "Mushroom ⊑ ∃hasTopping.TomatoTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Mushroom\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
       },
       {
-        "symbolic": "Mushroom ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Mushroom\u003e owl:Thing)"
+        "symbolic": "Mushroom ⊑ ∃hasTopping.MozzarellaTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Mushroom\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
+      },
+      {
+        "symbolic": "Mushroom ⊑ ∃hasTopping.MushroomTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Mushroom\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MushroomTopping\u003e))"
       }
     ],
-    "query": "Does every Mushroom have hasTopping.MozzarellaTopping?",
+    "query": "Does every Mushroom have hasTopping.TomatoTopping?",
     "expected": "Yes"
   },
   {
     "id": "test_22",
     "dl_profile": "EL",
     "axioms": [
+      {
+        "symbolic": "AmericanHot ⊑ ∃hasTopping.JalapenoPepperTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#AmericanHot\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#JalapenoPepperTopping\u003e))"
+      },
+      {
+        "symbolic": "AmericanHot ⊑ ∃hasTopping.HotGreenPepperTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#AmericanHot\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#HotGreenPepperTopping\u003e))"
+      },
+      {
+        "symbolic": "AmericanHot ⊑ ∃hasTopping.MozzarellaTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#AmericanHot\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
+      },
+      {
+        "symbolic": "AmericanHot ⊑ ∃hasTopping.PeperoniSausageTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#AmericanHot\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#PeperoniSausageTopping\u003e))"
+      },
+      {
+        "symbolic": "AmericanHot ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#AmericanHot\u003e owl:Thing)"
+      },
+      {
+        "symbolic": "AmericanHot ⊑ ∃hasTopping.TomatoTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#AmericanHot\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
+      }
+    ],
+    "query": "Does every AmericanHot have hasTopping.JalapenoPepperTopping?",
+    "expected": "Yes"
+  },
+  {
+    "id": "test_23",
+    "dl_profile": "EL",
+    "axioms": [
+      {
+        "symbolic": "SloppyGiuseppe ⊑ ∃hasTopping.OnionTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SloppyGiuseppe\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#OnionTopping\u003e))"
+      },
       {
         "symbolic": "SloppyGiuseppe ⊑ ∃hasTopping.HotSpicedBeefTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SloppyGiuseppe\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#HotSpicedBeefTopping\u003e))"
@@ -500,55 +536,19 @@
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SloppyGiuseppe\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
       },
       {
-        "symbolic": "SloppyGiuseppe ⊑ ∃hasTopping.OnionTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SloppyGiuseppe\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#OnionTopping\u003e))"
+        "symbolic": "SloppyGiuseppe ⊑ ∃hasTopping.MozzarellaTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SloppyGiuseppe\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
       },
       {
         "symbolic": "SloppyGiuseppe ⊑ ∃hasTopping.GreenPepperTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SloppyGiuseppe\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#GreenPepperTopping\u003e))"
       },
       {
-        "symbolic": "SloppyGiuseppe ⊑ ∃hasTopping.MozzarellaTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SloppyGiuseppe\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
-      },
-      {
         "symbolic": "SloppyGiuseppe ⊑ Thing",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SloppyGiuseppe\u003e owl:Thing)"
       }
     ],
-    "query": "Does every SloppyGiuseppe have hasTopping.HotSpicedBeefTopping?",
-    "expected": "Yes"
-  },
-  {
-    "id": "test_23",
-    "dl_profile": "EL",
-    "axioms": [
-      {
-        "symbolic": "AmericanHot ⊑ ∃hasTopping.MozzarellaTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#AmericanHot\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
-      },
-      {
-        "symbolic": "AmericanHot ⊑ ∃hasTopping.TomatoTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#AmericanHot\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
-      },
-      {
-        "symbolic": "AmericanHot ⊑ ∃hasTopping.PeperoniSausageTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#AmericanHot\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#PeperoniSausageTopping\u003e))"
-      },
-      {
-        "symbolic": "AmericanHot ⊑ ∃hasTopping.HotGreenPepperTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#AmericanHot\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#HotGreenPepperTopping\u003e))"
-      },
-      {
-        "symbolic": "AmericanHot ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#AmericanHot\u003e owl:Thing)"
-      },
-      {
-        "symbolic": "AmericanHot ⊑ ∃hasTopping.JalapenoPepperTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#AmericanHot\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#JalapenoPepperTopping\u003e))"
-      }
-    ],
-    "query": "Does every AmericanHot have hasTopping.MozzarellaTopping?",
+    "query": "Does every SloppyGiuseppe have hasTopping.OnionTopping?",
     "expected": "Yes"
   },
   {
@@ -556,15 +556,15 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "GarlicTopping ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#GarlicTopping\u003e owl:Thing)"
+        "symbolic": "PetitPoisTopping ⊑ ∃hasSpiciness.Mild",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PetitPoisTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Mild\u003e))"
       },
       {
-        "symbolic": "GarlicTopping ⊑ ∃hasSpiciness.Medium",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#GarlicTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Medium\u003e))"
+        "symbolic": "PetitPoisTopping ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PetitPoisTopping\u003e owl:Thing)"
       }
     ],
-    "query": "Does every GarlicTopping have hasSpiciness.Medium?",
+    "query": "Does every PetitPoisTopping have hasSpiciness.Mild?",
     "expected": "Yes"
   },
   {
@@ -572,29 +572,21 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "PetitPoisTopping ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PetitPoisTopping\u003e owl:Thing)"
+        "symbolic": "GarlicTopping ⊑ ∃hasSpiciness.Medium",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#GarlicTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Medium\u003e))"
       },
       {
-        "symbolic": "PetitPoisTopping ⊑ ∃hasSpiciness.Mild",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PetitPoisTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Mild\u003e))"
+        "symbolic": "GarlicTopping ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#GarlicTopping\u003e owl:Thing)"
       }
     ],
-    "query": "Does every PetitPoisTopping have hasSpiciness.Mild?",
+    "query": "Does every GarlicTopping have hasSpiciness.Medium?",
     "expected": "Yes"
   },
   {
     "id": "test_26",
     "dl_profile": "EL",
     "axioms": [
-      {
-        "symbolic": "Fiorentina ⊑ ∃hasTopping.TomatoTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Fiorentina\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
-      },
-      {
-        "symbolic": "Fiorentina ⊑ ∃hasTopping.OliveTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Fiorentina\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#OliveTopping\u003e))"
-      },
       {
         "symbolic": "Fiorentina ⊑ ∃hasTopping.MozzarellaTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Fiorentina\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
@@ -604,8 +596,16 @@
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Fiorentina\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#SpinachTopping\u003e))"
       },
       {
+        "symbolic": "Fiorentina ⊑ ∃hasTopping.TomatoTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Fiorentina\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
+      },
+      {
         "symbolic": "Fiorentina ⊑ ∃hasTopping.ParmesanTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Fiorentina\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#ParmesanTopping\u003e))"
+      },
+      {
+        "symbolic": "Fiorentina ⊑ ∃hasTopping.OliveTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Fiorentina\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#OliveTopping\u003e))"
       },
       {
         "symbolic": "Fiorentina ⊑ Thing",
@@ -616,7 +616,7 @@
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Fiorentina\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#GarlicTopping\u003e))"
       }
     ],
-    "query": "Does every Fiorentina have hasTopping.TomatoTopping?",
+    "query": "Does every Fiorentina have hasTopping.MozzarellaTopping?",
     "expected": "Yes"
   },
   {
@@ -624,12 +624,12 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "SlicedTomatoTopping ⊑ ∃hasSpiciness.Mild",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SlicedTomatoTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Mild\u003e))"
-      },
-      {
         "symbolic": "SlicedTomatoTopping ⊑ Thing",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SlicedTomatoTopping\u003e owl:Thing)"
+      },
+      {
+        "symbolic": "SlicedTomatoTopping ⊑ ∃hasSpiciness.Mild",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SlicedTomatoTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Mild\u003e))"
       }
     ],
     "query": "Does every SlicedTomatoTopping have hasSpiciness.Mild?",
@@ -672,31 +672,31 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "Parmense ⊑ ∃hasTopping.TomatoTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Parmense\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
+        "symbolic": "Parmense ⊑ ∃hasTopping.MozzarellaTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Parmense\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
+      },
+      {
+        "symbolic": "Parmense ⊑ ∃hasTopping.ParmesanTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Parmense\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#ParmesanTopping\u003e))"
       },
       {
         "symbolic": "Parmense ⊑ Thing",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Parmense\u003e owl:Thing)"
       },
       {
-        "symbolic": "Parmense ⊑ ∃hasTopping.MozzarellaTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Parmense\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
+        "symbolic": "Parmense ⊑ ∃hasTopping.AsparagusTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Parmense\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#AsparagusTopping\u003e))"
       },
       {
         "symbolic": "Parmense ⊑ ∃hasTopping.HamTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Parmense\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#HamTopping\u003e))"
       },
       {
-        "symbolic": "Parmense ⊑ ∃hasTopping.AsparagusTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Parmense\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#AsparagusTopping\u003e))"
-      },
-      {
-        "symbolic": "Parmense ⊑ ∃hasTopping.ParmesanTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Parmense\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#ParmesanTopping\u003e))"
+        "symbolic": "Parmense ⊑ ∃hasTopping.TomatoTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Parmense\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
       }
     ],
-    "query": "Does every Parmense have hasTopping.TomatoTopping?",
+    "query": "Does every Parmense have hasTopping.MozzarellaTopping?",
     "expected": "Yes"
   },
   {
@@ -724,6 +724,18 @@
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Cajun\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#OnionTopping\u003e))"
       },
       {
+        "symbolic": "Cajun ⊑ ∃hasTopping.MozzarellaTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Cajun\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
+      },
+      {
+        "symbolic": "Cajun ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Cajun\u003e owl:Thing)"
+      },
+      {
+        "symbolic": "Cajun ⊑ ∃hasTopping.PrawnsTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Cajun\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#PrawnsTopping\u003e))"
+      },
+      {
         "symbolic": "Cajun ⊑ ∃hasTopping.TobascoPepperSauce",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Cajun\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TobascoPepperSauce\u003e))"
       },
@@ -732,20 +744,8 @@
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Cajun\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#PeperonataTopping\u003e))"
       },
       {
-        "symbolic": "Cajun ⊑ ∃hasTopping.PrawnsTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Cajun\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#PrawnsTopping\u003e))"
-      },
-      {
         "symbolic": "Cajun ⊑ ∃hasTopping.TomatoTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Cajun\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
-      },
-      {
-        "symbolic": "Cajun ⊑ ∃hasTopping.MozzarellaTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Cajun\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
-      },
-      {
-        "symbolic": "Cajun ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Cajun\u003e owl:Thing)"
       }
     ],
     "query": "Does every Cajun have hasTopping.OnionTopping?",
@@ -788,12 +788,12 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "PeperonataTopping ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PeperonataTopping\u003e owl:Thing)"
-      },
-      {
         "symbolic": "PeperonataTopping ⊑ ∃hasSpiciness.Medium",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PeperonataTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Medium\u003e))"
+      },
+      {
+        "symbolic": "PeperonataTopping ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PeperonataTopping\u003e owl:Thing)"
       }
     ],
     "query": "Does every PeperonataTopping have hasSpiciness.Medium?",
@@ -804,15 +804,19 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "PeperoniSausageTopping ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PeperoniSausageTopping\u003e owl:Thing)"
+        "symbolic": "Margherita ⊑ ∃hasTopping.TomatoTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Margherita\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
       },
       {
-        "symbolic": "PeperoniSausageTopping ⊑ ∃hasSpiciness.Medium",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PeperoniSausageTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Medium\u003e))"
+        "symbolic": "Margherita ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Margherita\u003e owl:Thing)"
+      },
+      {
+        "symbolic": "Margherita ⊑ ∃hasTopping.MozzarellaTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Margherita\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
       }
     ],
-    "query": "Does every PeperoniSausageTopping have hasSpiciness.Medium?",
+    "query": "Does every Margherita have hasTopping.TomatoTopping?",
     "expected": "Yes"
   },
   {
@@ -820,19 +824,15 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "Margherita ⊑ ∃hasTopping.TomatoTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Margherita\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
+        "symbolic": "PeperoniSausageTopping ⊑ ∃hasSpiciness.Medium",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PeperoniSausageTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Medium\u003e))"
       },
       {
-        "symbolic": "Margherita ⊑ ∃hasTopping.MozzarellaTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Margherita\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
-      },
-      {
-        "symbolic": "Margherita ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Margherita\u003e owl:Thing)"
+        "symbolic": "PeperoniSausageTopping ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#PeperoniSausageTopping\u003e owl:Thing)"
       }
     ],
-    "query": "Does every Margherita have hasTopping.TomatoTopping?",
+    "query": "Does every PeperoniSausageTopping have hasSpiciness.Medium?",
     "expected": "Yes"
   },
   {
@@ -840,32 +840,32 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "Soho ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Soho\u003e owl:Thing)"
-      },
-      {
         "symbolic": "Soho ⊑ ∃hasTopping.OliveTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Soho\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#OliveTopping\u003e))"
+      },
+      {
+        "symbolic": "Soho ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Soho\u003e owl:Thing)"
       },
       {
         "symbolic": "Soho ⊑ ∃hasTopping.TomatoTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Soho\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
       },
       {
-        "symbolic": "Soho ⊑ ∃hasTopping.GarlicTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Soho\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#GarlicTopping\u003e))"
+        "symbolic": "Soho ⊑ ∃hasTopping.ParmesanTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Soho\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#ParmesanTopping\u003e))"
       },
       {
         "symbolic": "Soho ⊑ ∃hasTopping.RocketTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Soho\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#RocketTopping\u003e))"
       },
       {
-        "symbolic": "Soho ⊑ ∃hasTopping.MozzarellaTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Soho\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
+        "symbolic": "Soho ⊑ ∃hasTopping.GarlicTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Soho\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#GarlicTopping\u003e))"
       },
       {
-        "symbolic": "Soho ⊑ ∃hasTopping.ParmesanTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Soho\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#ParmesanTopping\u003e))"
+        "symbolic": "Soho ⊑ ∃hasTopping.MozzarellaTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Soho\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
       }
     ],
     "query": "Does every Soho have hasTopping.OliveTopping?",
@@ -892,12 +892,12 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "ChickenTopping ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#ChickenTopping\u003e owl:Thing)"
-      },
-      {
         "symbolic": "ChickenTopping ⊑ ∃hasSpiciness.Mild",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#ChickenTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Mild\u003e))"
+      },
+      {
+        "symbolic": "ChickenTopping ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#ChickenTopping\u003e owl:Thing)"
       }
     ],
     "query": "Does every ChickenTopping have hasSpiciness.Mild?",
@@ -924,31 +924,31 @@
     "dl_profile": "EL",
     "axioms": [
       {
+        "symbolic": "LaReine ⊑ ∃hasTopping.OliveTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#LaReine\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#OliveTopping\u003e))"
+      },
+      {
         "symbolic": "LaReine ⊑ Thing",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#LaReine\u003e owl:Thing)"
+      },
+      {
+        "symbolic": "LaReine ⊑ ∃hasTopping.TomatoTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#LaReine\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
       },
       {
         "symbolic": "LaReine ⊑ ∃hasTopping.MushroomTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#LaReine\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MushroomTopping\u003e))"
       },
       {
-        "symbolic": "LaReine ⊑ ∃hasTopping.HamTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#LaReine\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#HamTopping\u003e))"
-      },
-      {
         "symbolic": "LaReine ⊑ ∃hasTopping.MozzarellaTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#LaReine\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
       },
       {
-        "symbolic": "LaReine ⊑ ∃hasTopping.OliveTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#LaReine\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#OliveTopping\u003e))"
-      },
-      {
-        "symbolic": "LaReine ⊑ ∃hasTopping.TomatoTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#LaReine\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
+        "symbolic": "LaReine ⊑ ∃hasTopping.HamTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#LaReine\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#HamTopping\u003e))"
       }
     ],
-    "query": "Does every LaReine have hasTopping.MushroomTopping?",
+    "query": "Does every LaReine have hasTopping.OliveTopping?",
     "expected": "Yes"
   },
   {
@@ -972,12 +972,12 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "JalapenoPepperTopping ⊑ ∃hasSpiciness.Hot",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#JalapenoPepperTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Hot\u003e))"
-      },
-      {
         "symbolic": "JalapenoPepperTopping ⊑ Thing",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#JalapenoPepperTopping\u003e owl:Thing)"
+      },
+      {
+        "symbolic": "JalapenoPepperTopping ⊑ ∃hasSpiciness.Hot",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#JalapenoPepperTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Hot\u003e))"
       }
     ],
     "query": "Does every JalapenoPepperTopping have hasSpiciness.Hot?",
@@ -988,39 +988,39 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "FourSeasons ⊑ ∃hasTopping.OliveTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FourSeasons\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#OliveTopping\u003e))"
-      },
-      {
-        "symbolic": "FourSeasons ⊑ ∃hasTopping.MozzarellaTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FourSeasons\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
-      },
-      {
-        "symbolic": "FourSeasons ⊑ ∃hasTopping.CaperTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FourSeasons\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#CaperTopping\u003e))"
-      },
-      {
-        "symbolic": "FourSeasons ⊑ ∃hasTopping.MushroomTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FourSeasons\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MushroomTopping\u003e))"
+        "symbolic": "FourSeasons ⊑ ∃hasTopping.PeperoniSausageTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FourSeasons\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#PeperoniSausageTopping\u003e))"
       },
       {
         "symbolic": "FourSeasons ⊑ ∃hasTopping.TomatoTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FourSeasons\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
       },
       {
-        "symbolic": "FourSeasons ⊑ ∃hasTopping.PeperoniSausageTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FourSeasons\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#PeperoniSausageTopping\u003e))"
+        "symbolic": "FourSeasons ⊑ ∃hasTopping.MushroomTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FourSeasons\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MushroomTopping\u003e))"
+      },
+      {
+        "symbolic": "FourSeasons ⊑ ∃hasTopping.AnchoviesTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FourSeasons\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#AnchoviesTopping\u003e))"
+      },
+      {
+        "symbolic": "FourSeasons ⊑ ∃hasTopping.MozzarellaTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FourSeasons\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
       },
       {
         "symbolic": "FourSeasons ⊑ Thing",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FourSeasons\u003e owl:Thing)"
       },
       {
-        "symbolic": "FourSeasons ⊑ ∃hasTopping.AnchoviesTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FourSeasons\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#AnchoviesTopping\u003e))"
+        "symbolic": "FourSeasons ⊑ ∃hasTopping.OliveTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FourSeasons\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#OliveTopping\u003e))"
+      },
+      {
+        "symbolic": "FourSeasons ⊑ ∃hasTopping.CaperTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FourSeasons\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#CaperTopping\u003e))"
       }
     ],
-    "query": "Does every FourSeasons have hasTopping.OliveTopping?",
+    "query": "Does every FourSeasons have hasTopping.PeperoniSausageTopping?",
     "expected": "Yes"
   },
   {
@@ -1028,12 +1028,12 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "SpinachTopping ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SpinachTopping\u003e owl:Thing)"
-      },
-      {
         "symbolic": "SpinachTopping ⊑ ∃hasSpiciness.Mild",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SpinachTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Mild\u003e))"
+      },
+      {
+        "symbolic": "SpinachTopping ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SpinachTopping\u003e owl:Thing)"
       }
     ],
     "query": "Does every SpinachTopping have hasSpiciness.Mild?",
@@ -1060,28 +1060,20 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "Siciliana ⊑ ∃hasTopping.TomatoTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Siciliana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
+        "symbolic": "Siciliana ⊑ ∃hasTopping.GarlicTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Siciliana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#GarlicTopping\u003e))"
       },
       {
         "symbolic": "Siciliana ⊑ ∃hasTopping.MozzarellaTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Siciliana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
       },
       {
-        "symbolic": "Siciliana ⊑ ∃hasTopping.GarlicTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Siciliana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#GarlicTopping\u003e))"
-      },
-      {
-        "symbolic": "Siciliana ⊑ ∃hasTopping.HamTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Siciliana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#HamTopping\u003e))"
-      },
-      {
         "symbolic": "Siciliana ⊑ ∃hasTopping.ArtichokeTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Siciliana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#ArtichokeTopping\u003e))"
       },
       {
-        "symbolic": "Siciliana ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Siciliana\u003e owl:Thing)"
+        "symbolic": "Siciliana ⊑ ∃hasTopping.TomatoTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Siciliana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
       },
       {
         "symbolic": "Siciliana ⊑ ∃hasTopping.AnchoviesTopping",
@@ -1090,9 +1082,17 @@
       {
         "symbolic": "Siciliana ⊑ ∃hasTopping.OliveTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Siciliana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#OliveTopping\u003e))"
+      },
+      {
+        "symbolic": "Siciliana ⊑ ∃hasTopping.HamTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Siciliana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#HamTopping\u003e))"
+      },
+      {
+        "symbolic": "Siciliana ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Siciliana\u003e owl:Thing)"
       }
     ],
-    "query": "Does every Siciliana have hasTopping.TomatoTopping?",
+    "query": "Does every Siciliana have hasTopping.GarlicTopping?",
     "expected": "Yes"
   },
   {
@@ -1132,12 +1132,12 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "RocketTopping ⊑ ∃hasSpiciness.Medium",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#RocketTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Medium\u003e))"
-      },
-      {
         "symbolic": "RocketTopping ⊑ Thing",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#RocketTopping\u003e owl:Thing)"
+      },
+      {
+        "symbolic": "RocketTopping ⊑ ∃hasSpiciness.Medium",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#RocketTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Medium\u003e))"
       }
     ],
     "query": "Does every RocketTopping have hasSpiciness.Medium?",
@@ -1148,12 +1148,12 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "HotSpicedBeefTopping ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#HotSpicedBeefTopping\u003e owl:Thing)"
-      },
-      {
         "symbolic": "HotSpicedBeefTopping ⊑ ∃hasSpiciness.Hot",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#HotSpicedBeefTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Hot\u003e))"
+      },
+      {
+        "symbolic": "HotSpicedBeefTopping ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#HotSpicedBeefTopping\u003e owl:Thing)"
       }
     ],
     "query": "Does every HotSpicedBeefTopping have hasSpiciness.Hot?",
@@ -1164,31 +1164,31 @@
     "dl_profile": "EL",
     "axioms": [
       {
+        "symbolic": "Napoletana ⊑ ∃hasTopping.AnchoviesTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Napoletana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#AnchoviesTopping\u003e))"
+      },
+      {
         "symbolic": "Napoletana ⊑ ∃hasTopping.TomatoTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Napoletana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
       },
       {
-        "symbolic": "Napoletana ⊑ ∃hasTopping.MozzarellaTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Napoletana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
+        "symbolic": "Napoletana ⊑ ∃hasTopping.OliveTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Napoletana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#OliveTopping\u003e))"
       },
       {
         "symbolic": "Napoletana ⊑ Thing",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Napoletana\u003e owl:Thing)"
       },
       {
-        "symbolic": "Napoletana ⊑ ∃hasTopping.AnchoviesTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Napoletana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#AnchoviesTopping\u003e))"
-      },
-      {
         "symbolic": "Napoletana ⊑ ∃hasTopping.CaperTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Napoletana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#CaperTopping\u003e))"
       },
       {
-        "symbolic": "Napoletana ⊑ ∃hasTopping.OliveTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Napoletana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#OliveTopping\u003e))"
+        "symbolic": "Napoletana ⊑ ∃hasTopping.MozzarellaTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Napoletana\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
       }
     ],
-    "query": "Does every Napoletana have hasTopping.TomatoTopping?",
+    "query": "Does every Napoletana have hasTopping.AnchoviesTopping?",
     "expected": "Yes"
   },
   {
@@ -1196,12 +1196,12 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "SultanaTopping ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SultanaTopping\u003e owl:Thing)"
-      },
-      {
         "symbolic": "SultanaTopping ⊑ ∃hasSpiciness.Medium",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SultanaTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Medium\u003e))"
+      },
+      {
+        "symbolic": "SultanaTopping ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#SultanaTopping\u003e owl:Thing)"
       }
     ],
     "query": "Does every SultanaTopping have hasSpiciness.Medium?",
@@ -1212,12 +1212,12 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "FourCheesesTopping ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FourCheesesTopping\u003e owl:Thing)"
-      },
-      {
         "symbolic": "FourCheesesTopping ⊑ ∃hasSpiciness.Mild",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FourCheesesTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Mild\u003e))"
+      },
+      {
+        "symbolic": "FourCheesesTopping ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#FourCheesesTopping\u003e owl:Thing)"
       }
     ],
     "query": "Does every FourCheesesTopping have hasSpiciness.Mild?",
@@ -1228,12 +1228,12 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "GorgonzolaTopping ⊑ ∃hasSpiciness.Mild",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#GorgonzolaTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Mild\u003e))"
-      },
-      {
         "symbolic": "GorgonzolaTopping ⊑ Thing",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#GorgonzolaTopping\u003e owl:Thing)"
+      },
+      {
+        "symbolic": "GorgonzolaTopping ⊑ ∃hasSpiciness.Mild",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#GorgonzolaTopping\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasSpiciness\u003e \u003chttp://example.org/pizza-el.owl#Mild\u003e))"
       }
     ],
     "query": "Does every GorgonzolaTopping have hasSpiciness.Mild?",
@@ -1260,27 +1260,27 @@
     "dl_profile": "EL",
     "axioms": [
       {
-        "symbolic": "Caprina ⊑ ∃hasTopping.MozzarellaTopping",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Caprina\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
-      },
-      {
         "symbolic": "Caprina ⊑ ∃hasTopping.SundriedTomatoTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Caprina\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#SundriedTomatoTopping\u003e))"
-      },
-      {
-        "symbolic": "Caprina ⊑ Thing",
-        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Caprina\u003e owl:Thing)"
       },
       {
         "symbolic": "Caprina ⊑ ∃hasTopping.GoatsCheeseTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Caprina\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#GoatsCheeseTopping\u003e))"
       },
       {
+        "symbolic": "Caprina ⊑ ∃hasTopping.MozzarellaTopping",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Caprina\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#MozzarellaTopping\u003e))"
+      },
+      {
         "symbolic": "Caprina ⊑ ∃hasTopping.TomatoTopping",
         "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Caprina\u003e ObjectSomeValuesFrom(\u003chttp://example.org/pizza-el.owl#hasTopping\u003e \u003chttp://example.org/pizza-el.owl#TomatoTopping\u003e))"
+      },
+      {
+        "symbolic": "Caprina ⊑ Thing",
+        "functional": "SubClassOf(\u003chttp://example.org/pizza-el.owl#Caprina\u003e owl:Thing)"
       }
     ],
-    "query": "Does every Caprina have hasTopping.MozzarellaTopping?",
+    "query": "Does every Caprina have hasTopping.SundriedTomatoTopping?",
     "expected": "Yes"
   }
 ]

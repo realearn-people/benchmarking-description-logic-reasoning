@@ -23,11 +23,14 @@ public class ELHExtender {
      * @throws Exception if file operations fail
      */
     public static void main(String[] args) throws Exception {
+        extendToELH("output_HermitReasoner/benchmark_output.json", "output_HermitReasoner/benchmark_output_with_elh.json");
+    }
+
+    public static void extendToELH(String inputFilePath, String outputFilePath) throws Exception {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        JsonArray input = JsonParser.parseReader(new FileReader("benchmark_output.json")).getAsJsonArray();
+        JsonArray input = JsonParser.parseReader(new FileReader(inputFilePath)).getAsJsonArray();
         JsonArray output = new JsonArray();
 
-        // Loop through each test case
         for (JsonElement el : input) {
             JsonObject entry = el.getAsJsonObject();
             JsonArray originalAxioms = entry.getAsJsonArray("axioms");
@@ -35,13 +38,11 @@ public class ELHExtender {
             Set<String> foundRoles = new HashSet<>();
             boolean isELH = false;
 
-            // Step 1: Extract roles from ∃r.C expressions
             for (JsonElement axEl : originalAxioms) {
                 JsonObject ax = axEl.getAsJsonObject();
-                String symbolic = ax.get("symbolic").getAsString();
-                modifiedAxioms.add(ax); // add original axiom
+                String symbolic = ax.get("symbolic-format").getAsString();
+                modifiedAxioms.add(ax);
 
-                // Identify and extract role name used in existential restriction
                 if (symbolic.contains("∃")) {
                     int start = symbolic.indexOf("∃") + 1;
                     int dot = symbolic.indexOf(".", start);
@@ -52,30 +53,26 @@ public class ELHExtender {
                 }
             }
 
-            // Step 2: Add role hierarchy axioms (R ⊑ superOfR)
             for (String role : foundRoles) {
                 String superRole = "superOf" + capitalize(role);
                 String symbolic = role + " ⊑ " + superRole;
 
                 JsonObject ax = new JsonObject();
-                ax.addProperty("symbolic", symbolic);
-                ax.addProperty("functional", "SubObjectPropertyOf(" + role + " " + superRole + ")");
+                ax.addProperty("symbolic-format", symbolic);
+                ax.addProperty("OWL-format", "SubObjectPropertyOf(" + role + " " + superRole + ")");
                 modifiedAxioms.add(ax);
                 isELH = true;
             }
 
-            // Step 3: Create modified test case with updated axioms and profile
             JsonObject extended = entry.deepCopy();
             extended.add("axioms", modifiedAxioms);
             extended.addProperty("dl_profile", isELH ? "ELH" : "EL");
-
             output.add(extended);
         }
 
-        // Write output file with ELH-extended test cases
-        try (FileWriter writer = new FileWriter("benchmark_output_with_elh.json")) {
+        try (FileWriter writer = new FileWriter(outputFilePath)) {
             gson.toJson(output, writer);
-            System.out.println("Extended ELH benchmark saved to benchmark_output_with_elh.json");
+            System.out.println("Extended ELH benchmark saved to " + outputFilePath);
         }
     }
 

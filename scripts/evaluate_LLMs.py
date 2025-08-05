@@ -17,10 +17,10 @@ genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 GEMINI_MODEL = genai.GenerativeModel("gemini-2.5-pro")
 
 # === 2. File Paths ===
-INPUT_FILE_EL = "../benchmark_output.json"
+INPUT_FILE_EL = "../output_StructuralReasoner/benchmark_output.json"
 OUTPUT_FILE_EL = "../results_{model}_el.json"
 
-INPUT_FILE_ELH = "../benchmark_output_with_elh.json"
+INPUT_FILE_ELH = "../output_StructuralReasoner/benchmark_output_with_elh.json"
 OUTPUT_FILE_ELH = "../results_{model}_elh.json"
 
 # === 3. Prompt Builder ===
@@ -61,8 +61,12 @@ def call_llm(prompt, model_name="gpt-4o", retries=3):
                 response = GEMINI_MODEL.generate_content(prompt)
                 return response.text.strip() if response.text else "Error: Empty Gemini response"
 
-            elif model_name in {"llama3:latest", "gemma3:latest"}:
-                # Ollama API for LLaMA
+            elif model_name in {"llama3:latest",
+                                "gemma3:latest",
+                                "deepseek-coder:6.7b-instruct",
+                                "qwen:7b",
+                                "mistral:latest"}:
+                # Ollama API
                 res = requests.post(
                     "http://localhost:11434/api/generate",
                     json={
@@ -105,7 +109,7 @@ def evaluate(input_file, output_file, model_name):
             "query": entry["query"],
             "expected": entry["expected"],
             "llm": model_name,
-            "gpt_answer": answer,
+            "llm_answer": answer,
             "match": match,
         })
 
@@ -121,18 +125,18 @@ def evaluate(input_file, output_file, model_name):
 
     print("\n False Positives (Expected: No, Got: Yes):")
     for r in results:
-        if r["expected"].lower() == "no" and r["gpt_answer"].lower() == "yes":
+        if r["expected"].lower() == "no" and r["llm_answer"].lower() == "yes":
             print(f"- ID: {r['id']} | Query: {r['query']}")
 
     print("\n False Negatives (Expected: Yes, Got: No):")
     for r in results:
-        if r["expected"].lower() == "yes" and r["gpt_answer"].lower() == "no":
+        if r["expected"].lower() == "yes" and r["llm_answer"].lower() == "no":
             print(f"- ID: {r['id']} | Query: {r['query']}")
 
 # === 6. Runner ===
 if __name__ == "__main__":
-    models = ["llama3:latest", "gemma3:latest"]
-    #"gpt-4o", "gemini-2.5-pro", "llama3:latest", "gemma3:latest"
+    models = ["qwen:7b"]
+    #"gpt-4o", "gemini-2.5-pro", "llama3:latest", "gemma3:latest", "deepseek-coder:6.7b-instruct", "qwen:7b", "mistral:latest"
 
     for model in models:
         print(f"\n Running {model} on EL")

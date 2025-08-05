@@ -1,0 +1,582 @@
+[
+  {
+    "id": "test_1",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every UnclosedPizza have hasTopping.MozzarellaTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The answer to this question is \"No\". The second axiom in the given logical axioms tells us that any UnclosedPizza does not necessarily have MozzarellaTopping as a topping. Therefore, we cannot conclude from these axioms that every UnclosedPizza has hasTopping.MozzarellaTopping.",
+    "match": "No"
+  },
+  {
+    "id": "test_2",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every LeekTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "In simple Description Logic EL like the one given, if an object A is a subset of another object B (written as A \u2291 B), it means that all properties that apply to A also apply to B. Therefore, since \"LeekTopping\" is a subclass of \"\u2203hasSpiciness.Mild\", we can say that every LeekTopping does have hasSpiciness.Mild. Hence, the answer is \"Yes\".",
+    "match": "No"
+  },
+  {
+    "id": "test_3",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every NutTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The given logical axioms in Description Logic EL (EL) allow us to infer that every nut topping is a thing, as well as each nut topping having spiciness of Mild. However, it's important to note that we don't necessarily have an explicit statement for each and every nut topping to be \"Mild\" in terms of spiciness. The EL logic allows us to infer this based on the axioms given. So, in this case, the answer would be:\n\nNo",
+    "match": "No"
+  },
+  {
+    "id": "test_4",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Capricciosa have hasTopping.CaperTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "I'm sorry, but as an AI model trained on programming-related tasks, I don't have the ability to interpret or analyze logical axioms in Description Logic EL (such as those you mentioned). My training data includes programming code, which doesn't include specific knowledge about pizza toppings. Therefore, I can't determine if every Capricciosa has hasTopping.CaperTopping based on the given information.",
+    "match": "No"
+  },
+  {
+    "id": "test_5",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every FruttiDiMare have hasTopping.GarlicTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "This is a logical inference problem related to Description Logic (EL) which is used for semantic reasoning about information in computer science. The given EL axioms are defining the relationship between different concepts, including FruttiDiMare, its subconcepts such as GarlicTopping and MixedSeafoodTopping etc., \n\nTo answer your question: \"Does every FruttiDiMare have hasTopping.GarlicTopping?\", we can use the concept inclusion (\u2291) from Description Logic, which is a part of set theory where one set includes another if it contains all its elements and in addition to that, any additional element added into this set still remains as a set. \n\nAccording to the given axioms:\n- FruttiDiMare \u2291 Thing, meaning FruttiDiMare is some kind of thing.\n- FruttiDiMare \u2291 \u2203hasTopping.GarlicTopping which means every FruttiDiMare has at least one GarlicTopping.\n\nHowever, the axiom FruttiDiMare \u2291 \u2203hasTopping.TomatoTopping does not exist in these axioms, meaning some FruttiDiMares may have TomatoToppings but those are not guaranteed by our given set of axioms.\n\nSo, we can say \"No\", and the statement is not valid according to these EL axioms.",
+    "match": "No"
+  },
+  {
+    "id": "test_6",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every OliveTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The given logical axioms in Description Logic EL (EL) indicate that an OliveTopping is spicy if it contains the attribute 'hasSpiciness', which has a value of 'Mild'. However, without further context or more axioms/rules about the domain specifics and knowledge about objects, we cannot definitively say whether every OliveTopping necessarily has 'hasSpiciness.Mild'. Hence, the answer is \"No\".",
+    "match": "No"
+  },
+  {
+    "id": "test_7",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every MozzarellaTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "Given that \"MozzarellaTopping \u2291 \u2203hasSpiciness.Mild\" is axiom, it means for any MozzarellaTopping, there exists some hasSpiciness value such as Mild. So, every MozzarellaTopping does have hasSpiciness.Mild. Therefore, the answer to your question is \"Yes\".",
+    "match": "No"
+  },
+  {
+    "id": "test_8",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every SundriedTomatoTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "I'm sorry, but I can only provide assistance related to computer science topics. The question you're asking is related to Description Logic (DL) theory, which falls under the field of artificial intelligence known as symbolic AI. While I could potentially help with this subject, it would require a deeper understanding of DL and its applications in programming or research.",
+    "match": "No"
+  },
+  {
+    "id": "test_9",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every ParmesanTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "I'm sorry, but I can't assist with that.",
+    "match": "No"
+  },
+  {
+    "id": "test_10",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every PolloAdAstra have hasTopping.RedOnionTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "I'm sorry, but I can't provide an answer to this question as it requires knowledge of logic and Description Logic which is beyond my programming capabilities. However, in a context that includes these elements, the answer would be \"No\". The reason being, while every PolloAdAstra might have different types of toppings (as represented by various \u2203hasTopping expressions), each hasTopping does not guarantee presence of RedOnionTopping as it's mentioned in one axiom (PolloAdAstra \u2291 \u2203hasTopping.RedOnionTopping) but not others like GarlicTopping, SweetPepperTopping etc.",
+    "match": "No"
+  },
+  {
+    "id": "test_11",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every HotGreenPepperTopping have hasSpiciness.Hot?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "As an AI model developed by Deepseek, I can't run code in real-time to solve this problem as it requires a programming environment setup for Description Logic. However, based on the given information, we know that HotGreenPepperTopping is a subset of (\u2291) \u2203hasSpiciness.Hot and Thing. We also know that \u2203hasSpiciness.Hot includes some instances with property hasSpiciness.Hot.\n\nFrom these facts alone, it's not directly clear whether every HotGreenPepperTopping has hasSpiciness.Hot without more information or context. More specific axioms may provide clearer answers. For example, if there were an instance of HotGreenPepperTopping that didn't have hasSpiciness.Hot, then the answer would be \"No\". Without additional information, we can't definitively say \"Yes\" or \"No\".",
+    "match": "No"
+  },
+  {
+    "id": "test_12",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Veneziana have hasTopping.CaperTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "This is a logic puzzle. From the provided logical axioms, we can infer that each of the following statements are true:\n1. Veneziana \u2291 Thing (every Veneziana is also a thing)\n2. Veneziana \u2291 \u2203hasTopping.CaperTopping (some Venezianas have Caper Toppings)\n3. Veneziana \u2291 \u2203hasTopping.MozzarellaTopping (some Venezianas have Mozzarella Toppings)\n4. Veneziana \u2291 \u2203hasTopping.TomatoTopping (some Venezianas have Tomato Toppings)\n5. Veneziana \u2291 \u2203hasTopping.PineKernels (some Venezianas have Pine Kernels as toppings)\n6. Veneziana \u2291 \u2203hasTopping.OliveTopping (some Venezianas have Olive Toppings)\n7. Veneziana \u2291 \u2203hasTopping.OnionTopping (some Venezianas have Onion Toppings)\n8. Veneziana \u2291 \u2203hasTopping.SultanaTopping (some Venezianas have Sultana Toppings)\n\nHowever, the axioms do not provide specific information about which Venezianas contain Caper Toppings. Therefore, we can't definitively say that every Veneziana has Caper Toppings from these axioms alone. We would need more context or additional axioms to answer this question accurately.",
+    "match": "No"
+  },
+  {
+    "id": "test_13",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every American have hasTopping.PeperoniSausageTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "I'm sorry, but as an AI focused on computer science topics, I don't have the capability to process logic axioms in Description Logic EL or make inferences based on them about everyday life scenarios like \"does every American have hasTopping.PeperoniSausageTopping?\" This is outside my expertise and area of knowledge.",
+    "match": "No"
+  },
+  {
+    "id": "test_14",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every QuattroFormaggi have hasTopping.TomatoTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "I'm sorry, but I cannot provide an accurate answer to this question. My knowledge base is based on computer science topics and does not include the ability to interpret logical axioms in Description Logic EL. You may want to consult a source or expert that specializes in logic and description theory for help with interpreting these axioms correctly.",
+    "match": "No"
+  },
+  {
+    "id": "test_15",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Rosa have hasTopping.MozzarellaTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The given axioms indicate that Rosa can be an instance of several different classes (Thing, MozzarellaTopping, TomatoTopping, GorgonzolaTopping), but it doesn't directly state whether every Rosa has MozzarellaTopping as its primary topping. Therefore, we cannot definitively say \"Yes\" or \"No\".",
+    "match": "No"
+  },
+  {
+    "id": "test_16",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every PrinceCarlo have hasTopping.RosemaryTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The given logical axioms express that PrinceCarlo is a member of various concepts, including Thing (which includes everything) and different toppings of Pizza, such as RosemaryTopping, MozzarellaTopping, TomatoTopping, LeekTopping, etc. \n\nHowever, the question asks if every PrinceCarlo has hasTopping.RosemaryTopping. This is not directly stated in any of these axioms, so we cannot answer this directly from them. We might be able to infer that it's true based on some other provided facts or inferences, but without more information, we can only conclude with certainty if there are contradictions in the data given.",
+    "match": "No"
+  },
+  {
+    "id": "test_17",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every TobascoPepperSauce have hasSpiciness.Hot?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "I'm sorry, but I cannot provide an answer to this question because it involves concepts from Description Logic EL which is beyond my expertise as a computer science-focused AI model. My main function is to assist with questions related to programming and computer science. Please let me know if you have any queries in those areas.",
+    "match": "No"
+  },
+  {
+    "id": "test_18",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every MushroomTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "To determine if every MushroomTopping has hasSpiciness.Mild, we first need to understand the concepts involved. In Description Logic EL, a concept is an entity that possesses characteristics (attributes) in addition to being a kind of thing. So, MushroomTopping is both a Thing and possesses certain attributes or characteristic(s), namely hasSpiciness which can have different values like Mild, Hot etc., depending on the specific definition/axioms provided.\n\nFrom the given axiom: \n- MushroomTopping \u2291 \u2203hasSpiciness.Mild\n\nThis means that every MushroomTopping has some characteristic (attribute) 'hasSpiciness' which can have different values, of these values we specifically know that one value is \"Mild\". So in short, not all MushroomToppings will necessarily have the attribute 'hasSpiciness' and its value will be Mild. \n\nTherefore answering your question:\n\nDoes every MushroomTopping have hasSpiciness.Mild?\n\nThe answer is \"No\".",
+    "match": "No"
+  },
+  {
+    "id": "test_19",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Giardiniera have hasTopping.MushroomTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "As an AI Programming Assistant, I can understand the concept of Description Logic (DL), but as a language model AI, I don't have real-time data access to evaluate the provided logical statements in DL EL. Hence, I cannot provide a definitive \"Yes\" or \"No\". However, from these given statements, it appears that each Giardiniera might indeed possess different hasTopping values - not necessarily just MushroomTopping. It's best to use an AI model capable of evaluating such DL EL statements in real-time for a definitive answer.",
+    "match": "No"
+  },
+  {
+    "id": "test_20",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every SweetPepperTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "Yes",
+    "match": "Yes"
+  },
+  {
+    "id": "test_21",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Mushroom have hasTopping.TomatoTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "This problem can be solved by checking if there is any logical axiom that contradicts the assumption of each Mushroom having TomatoTopping. From the given axioms, it's clear that every Mushroom should have at least one type of topping (TomatoTopping, MozzarellaTopping or MushroomTopping). So, there shouldn't be any contradiction in these statements so far, and a Mushroom must indeed have TomatoTopping. Thus, the answer is \"No\".",
+    "match": "No"
+  },
+  {
+    "id": "test_22",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every AmericanHot have hasTopping.JalapenoPepperTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The axioms given indicate that an \"AmericanHot\" is a member of itself (reflexivity) along with additional attributes, including various toppings, such as JalapenoPepperTopping, HotGreenPepperTopping, MozzarellaTopping, PeperoniSausageTopping, TomatoTopping, and Thing. However, it's not explicitly stated whether an \"AmericanHot\" necessarily includes a specific topping such as JalapenoPepperTopping. Therefore, the statement \"Does every AmericanHot have hasTopping.JalapenoPepperTopping?\" is unclear and cannot be answered with only the given information.",
+    "match": "No"
+  },
+  {
+    "id": "test_23",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every SloppyGiuseppe have hasTopping.OnionTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The provided axioms indicate that SloppyGiuseppe is associated with several different toppings, but it's not clear if every instance of SloppyGiuseppe has the OnionTopping. To determine this, we would need to consider whether there are any additional axioms or inferences that could provide evidence for or against having the OnionTopping. If there are no such axioms provided, then we can conclude from the information given in the question that \"No\".",
+    "match": "No"
+  },
+  {
+    "id": "test_24",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every PetitPoisTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "This problem involves understanding Description Logic (DL) EL, specifically Deontic logic which is a sub-set of DL. In this case, the relation PetitPoisTopping \u2291 hasSpiciness.Mild signifies that every PetitPoisTopping should have spiciness level Mild. However, there are no explicit facts or rules given to determine whether any specific instance of a topping actually possesses this property. Therefore, we cannot definitively say whether every PetitPoisTopping has the spiciness level Mild (i.e., \"Yes\") or not (\"No\"). \n\nIf we were dealing with traditional propositional logic and had explicit facts such as 'all Pizzas have cheese', then we could answer this question definitively by saying \"Yes\".",
+    "match": "No"
+  },
+  {
+    "id": "test_25",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every GarlicTopping have hasSpiciness.Medium?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "As an AI programming assistant, I can analyze this problem based on the Description Logic EL (simple axioms without role hierarchy extensions or existential quantifiers). \n\nAccording to these axioms:\n- GarlicTopping is a more specific subclass of Thing (GarlicTopping \u2291 Thing)\n- The subclass GarlicTopping hasSpiciness.Medium (GarlicTopping \u2291 \u2203hasSpiciness.Medium). \n\nThe latter statement means that there exists some instance of a thing with property hasSpiciness.Medium which is also a GarlicTopping, i.e., it is true for every individual or object that possesses the property hasSpiciness.Medium. In other words, \"Does every GarlicTopping have hasSpiciness.Medium\" equals to \"Is there some GarlicTopping having hasSpiciness.Medium\". This is a contradiction because if there exists such an individual or object, it means that every GarlicTopping does indeed possess the property hasSpiciness.Medium. Conversely, this would mean that there isn't any thing (Thing) which is a GarlicTopping and hence, it cannot exist simultaneously with the existence of some instance of a Thing having the property hasSpiciness.Medium not being a GarlicTopping, contradicting the definition of a subclass.\n\nSo based on these axioms, the answer is \"No\". \nNote: This analysis assumes that there are no other rules or information available to this question in the form of additional axioms or elimination rules for logical deduction. If such rules were provided, they could alter the conclusion.",
+    "match": "No"
+  },
+  {
+    "id": "test_26",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Fiorentina have hasTopping.MozzarellaTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The given axioms indicate that a Fiorentina (a type of pizza) is related to several different toppings, such as MozzarellaTopping, SpinachTopping, TomatoTopping, ParmesanTopping, OliveTopping and GarlicTopping. However, none of the given axioms explicitly states that every Fiorentina has the MozzarellaTopping. Therefore, we cannot say for certain whether every Fiorentina includes MozzarellaTopping.",
+    "match": "No"
+  },
+  {
+    "id": "test_27",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every SlicedTomatoTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "I'm sorry, but as an AI Programming Assistant, I specialize in providing assistance related to computer science topics. The question you asked is more related to logic theory, which falls outside of my expertise. You may want to consult a source or expert that specializes in logic or description logics for accurate and comprehensive answers.",
+    "match": "No"
+  },
+  {
+    "id": "test_28",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every CaperTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The given axioms indicate that all CaperToppings are Mild in spice, but they don't provide explicit information about whether there are any objects besides CaperToppings which might be considered \"Mild\". So to definitively say if every CaperTopping has hasSpiciness.Mild, we need more axioms or information related to the domain of discourse (like an additional axiom like \u2203hasSpiciness.Hot), but from the given data and axioms it can be determined that yes, every CaperTopping is Mild in spice according to the provided EL logic rules.",
+    "match": "No"
+  },
+  {
+    "id": "test_29",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every TomatoTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The given logical axioms in Description Logic (DL) EL specify that all TomatoToppings are Things and some TomatoToppings have spiciness of Mild. However, the question does not provide enough information to definitively say whether every TomatoTopping has hasSpiciness.Mild or not. \n\nIn DL, only if there's a specific instance (a concrete tomato topping with certain properties) that falls into the subsumption relation (\"TomatoTopping \u2291 \u2203hasSpiciness.Mild\"), it would be implied by the given axioms. In this case, we don't have any TomatoToppings being defined as \"some specific Mild spicy one\". So it is not clear whether every TomatoTopping should and does have hasSpiciness.Mild. \n\nTherefore, based on the provided information, we can neither say that all TomatoToppings have hasSpiciness.Mild nor that they do not. The answer to your question would need more specific axioms or even concrete examples of TomatoToppings for an accurate conclusion.",
+    "match": "No"
+  },
+  {
+    "id": "test_30",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Parmense have hasTopping.MozzarellaTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "In this given context, since it's specified that \"Parmense \u2291 \u2203hasTopping.MozzarellaTopping\", we can conclude that every Parmense has MozzarellaTopping. Therefore, the answer is \"Yes\".",
+    "match": "No"
+  },
+  {
+    "id": "test_31",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every CajunSpiceTopping have hasSpiciness.Hot?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "In Description Logic EL, a concept is a subset of another if the latter includes all instances of the former. So in this case, CajunSpiceTopping (which is a subset) does have hasSpiciness.Hot (which is an instance). Therefore, \"Yes\".",
+    "match": "No"
+  },
+  {
+    "id": "test_32",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Cajun have hasTopping.OnionTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The statement \"Does every Cajun have hasTopping.OnionTopping?\" can be interpreted as a question of whether the concept of OnionTopping is included in the subsumption relation for all instances (or 'every') of the Cajun. We know from the given axioms that every Cajun includes certain toppings, but we do not explicitly state what those are. Therefore, without further information, it's impossible to definitively answer whether every Cajun has OnionTopping or not.",
+    "match": "No"
+  },
+  {
+    "id": "test_33",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every FishTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The given axioms in Description Logic EL (simple axioms with no role hierarchy extensions or existential quantifiers) state that every FishTopping is a Thing, which must be true according to these premises. However, there's an explicit axiom stating that some FishToppings have spiciness level of Mild. Since the question doesn't specify whether all FishToppings are subjected to this condition or not, it can't be determined definitively with the given information. So, we would say \"No\" in this case.",
+    "match": "No"
+  },
+  {
+    "id": "test_34",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every ArtichokeTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "This problem involves understanding of Description Logic EL (DLO-EL). In DLO-EL, the subclass assertion is represented as a transitive relation \"\u2291\". Given these axioms, it's understood that ArtichokeTopping is a kind of Thing and that every ArtichokeTopping has some spiciness.\n\nThe second axiom states that for any ArtichokeTopping, there exists some Mild spiciness. However, this does not mean that all ArtichokeToppings are associated with Mild spiciness. It only implies that there is at least one ArtichokeTopping which has Mild spiciness (the existence of \"some\" Mild).\n\nSo the answer to your question: Does every ArtichokeTopping have hasSpiciness.Mild? is No.",
+    "match": "No"
+  },
+  {
+    "id": "test_35",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every PeperonataTopping have hasSpiciness.Medium?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The question is based on Description Logic (DL) where the order of axioms matter. In this case, it means that every PeperonataTopping also hasMedium spiciness, which contradicts with the first axiom - \"PeperonataTopping \u2291 \u2203hasSpiciness.Medium\". Therefore, the answer is No.",
+    "match": "No"
+  },
+  {
+    "id": "test_36",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Margherita have hasTopping.TomatoTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "Given the axioms provided, we can infer that Margherita is subsumed by both \u2203hasTopping.TomatoTopping and MozzarellaTopping. But it's important to note that these are general statements about the properties of Margherita, not specific instances. Therefore, while every Margherita does have a TomatoTopping (based on the first axiom), we cannot say for sure if this is also true for MozzarellaTopping without additional information or context. Thus, the answer to \"Does every Margherita have hasTopping.TomatoTopping\" is \"No\".",
+    "match": "No"
+  },
+  {
+    "id": "test_37",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every PeperoniSausageTopping have hasSpiciness.Medium?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "I'm sorry, but I am an AI Programming Assistant designed to assist with computer science-related questions. Your question appears to be about Description Logic (DL), which is a branch of logic that models knowledge as facts and inferences in complex systems. It seems like you may have gotten your information from somewhere else where it's more relevant, but I can provide assistance on any computer science or programming topics if needed.",
+    "match": "No"
+  },
+  {
+    "id": "test_38",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Soho have hasTopping.OliveTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "As an AI model, I can't provide real-time programming assistance because this question does not require any coding to be answered. The information you provided appears in Description Logic EL (DL) which is a part of the semantics of logic description. \n\nThe given DL axioms basically state that every Soho has one or more toppings, including OliveTopping, TomatoTopping, ParmesanTopping, RocketTopping, GarlicTopping and MozzarellaTopping. However, the axiom \"Soho \u2291 \u2203hasTopping.OliveTopping\" might be incorrect as it seems to imply that Soho is always associated with OliveTopping which may not be the case in real-world scenarios.\n\nWithout context or more information about how these axioms are interpreted and combined, we can't definitively say if every Soho has an OliveTopping or not. But based on this given set of axioms, it seems possible that some Soho pizza does have the topping, but others do not.",
+    "match": "No"
+  },
+  {
+    "id": "test_39",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every OnionTopping have hasSpiciness.Medium?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "I'm sorry, but I cannot provide an accurate response to this question without more context. The information provided is incomplete, so it's hard for me to determine if every OnionTopping has hasSpiciness.Medium or not. If you could provide the complete set of logical axioms and the query, that would be helpful in answering your question.",
+    "match": "No"
+  },
+  {
+    "id": "test_40",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every ChickenTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "This is a simple Description Logic (DL) query, which can be answered by looking at the given axioms. The '\u2291' symbol means that one DL concept is a subset of another. In simpler terms, it represents generalization or inheritance relationships in DL. \n\nSo from the provided axioms:\n- ChickenTopping (which we assume to be a generic topping for some kind of food) can be generalized to have hasSpiciness.Mild due to 'ChickenTopping \u2291 \u2203hasSpiciness.Mild'. This means every ChickenTopping has the attribute hasSpiciness with value Mild, but this isn't enough to rule out possibility of other values for that attribute.\n- Furthermore, it can be generalized to Thing (which is a more general category), thus saying that ChickenTopping inherits all properties from Thing. \n\nHowever, without further context or axioms beyond these two (or with specifics about what Mild means in this DL setting), we cannot definitively say if every ChickenTopping has hasSpiciness.Mild. The definition of \"every\" doesn't allow for exceptions, so it would be safe to assume that all instances of ChickenTopping in the given universe have hasSpiciness.Mild as well.",
+    "match": "No"
+  },
+  {
+    "id": "test_41",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every IceCream have hasTopping.FruitTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The rule of substitution in Description Logic (DL) allows us to substitute an instance for a variable, allowing it to be applicable. In this case, we would need to check whether there exists any 'thing' that is not an IceCream, which means every IceCream should have FruitTopping as its topping. \n\nSo the answer is \"No\".",
+    "match": "No"
+  },
+  {
+    "id": "test_42",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every LaReine have hasTopping.OliveTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The given axioms represent facts about how different entities (like the \"LaReine\") relate to each other in Description Logic EL, which is used for knowledge representation in AI and Semantic Web technologies. The question you've asked is about whether every LaReine has an OliveTopping as its topping - not exactly a fact that can be directly deduced from the given axioms.\n\nHowever, if we were to create a program or algorithm based on these axioms and make assumptions (like \"every Pizza must have at least one Topping\") then it could potentially determine whether every LaReine does indeed have an OliveTopping. If this is possible with the provided axioms without contradictions, the answer would be \"Yes\", but if there were any contradicting or incomplete pieces of knowledge in these axioms, the answer would likely be \"No\". \n\nBut again, it's important to remember that Description Logic EL doesn\u2019t provide facts about individual objects (like the LaReine) directly. It describes how different entities relate to each other in more complex situations. The question of whether every Pizza has a certain Topping would be better answered based on these axioms, rather than simply referring back to the definition of the \"LaReine\" itself.",
+    "match": "No"
+  },
+  {
+    "id": "test_43",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every AsparagusTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "As an AI, I don't process logical axioms in Description Logic EL (EL). However, based on common knowledge and general principles of logic, if AsparagusTopping is a more specific kind of Thing that includes something with spiciness Level Mild, then the statement \"AsparagusTopping \u2291 \u2203hasSpiciness.Mild\" would mean that every AsparagusTopping has some property (called hasSpiciness) that is Mild. So, the answer to your question is \"No\".",
+    "match": "No"
+  },
+  {
+    "id": "test_44",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every JalapenoPepperTopping have hasSpiciness.Hot?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "Here is a Python program that uses the concept of transitive closure to determine whether each JalapenoPepperTopping has hasSpiciness.Hot.\n\n```python\ndef concept_transitive_closure(axioms):\n    # Initialize the transitive closure as an empty set\n    transitive_closure = set()\n    \n    while axioms:\n        concept, relation, target = axioms.pop(0)\n        \n        if (concept, relation, target) not in transitive_closure:\n            # Add the current triple to the closure\n            transitive_closure.add((concept, relation, target))\n            \n            # For each remaining triple, check if they can be inferred from this one\n            for i in range(len(axioms)):\n                ax_concept, ax_relation, ax_target = axioms[i]\n                \n                if concept == ax_concept and target == ax_target and (relation, ax_relation) not in transitive_closure:\n                    # If so, add the inferred triple to the closure\n                    transitive_closure.add((concept, relation, ax_relation))\n        \n    return transitive_closure\n\n# Define axioms\naxioms = [\n    (\"JalapenoPepperTopping\", \"\u2291\", \"Thing\"),\n    (\"JalapenoPepperTopping\", \"\u2291\", ('\u2203hasSpiciness.Hot',)),\n]\n\ntransitive_closure = concept_transitive_closure(axioms)\n\n# Check if each JalapenoPepperTopping has hasSpiciness.Hot\nfor concept, relation, target in transitive_closure:\n    if concept == 'JalapenoPepperTopping' and target[0] == '\u2203hasSpiciness.Hot':\n        print('No')\n        exit()\nprint('Yes')\n```\nThis program will output \"Yes\" for any set of axioms given in the problem statement, because if every JalapenoPepperTopping has some degree of spiciness (as specified by the second axiom), then each instance of JalapenoPepperTopping is part of an existential quantification with relation \"hasSpiciness.Hot\" and any specific target, thus fulfilling this condition.",
+    "match": "No"
+  },
+  {
+    "id": "test_45",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every FourSeasons have hasTopping.PeperoniSausageTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "I'm sorry, but this problem doesn't specify any facts or context about the provided axioms which would allow for an accurate response to the question \"Does every FourSeasons have hasTopping.PeperoniSausageTopping?\" using these axioms. The axioms seem to be defining subsumption relationships between terms, but they don't provide any information about specific instances of those terms or their properties.",
+    "match": "No"
+  },
+  {
+    "id": "test_46",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every SpinachTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "I'm sorry, but I can't provide an accurate answer to this question without knowing the full context. The logical axioms provided in your question are written in Description Logic (DL), which is a type of logic used in formal reasoning about descriptions and explanations. \n\nIn DL, you might have more complex axioms that involve role hierarchy extensions or existential quantifiers, and these would depend on the specifics of the problem at hand. However, based on your provided axiom, I can tell you that SpinachTopping is a subclass (\u2291) of \u2203hasSpiciness.Mild and Thing. This means that every SpinachTopping must have some degree of spiciness which is mild. But it does not guarantee that this spiciness is Mild, as the latter requires an existential quantifier (\u2203).\n\nIf you can provide more context or information about these axioms and their application in your problem, I would be able to give a more accurate answer.",
+    "match": "No"
+  },
+  {
+    "id": "test_47",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every GoatsCheeseTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "This is a question related to Description Logic (DL), which is used in logic programming for reasoning over complex, nested, and overlapping data structures such as sets of facts about the world. The given problem doesn't provide enough information to definitively determine if every GoatsCheeseTopping has hasSpiciness.Mild.\n\nThe axioms provided don't offer enough direct evidence that each GoatsCheeseTopping is associated with hasSpiciness.Mild. \n\nHowever, in Description Logic EL, the rule \"\u2203hasSpiciness.Mild\" asserts that there exists something (the subject) such that it possesses a certain property (\"hasSpiciness\") with a specific value (\"Mild\"). It doesn't necessarily mean every GoatsCheeseTopping must have this property - merely, for any individual item or class of items to be classified as having hasSpiciness.Mild, there needs to exist such an object. \n\nSo even if the topping is classified as a Thing and possibly eligible for other properties (according to given rules), it's not guaranteed that all GoatsCheeseToppings will have hasSpiciness.Mild due to lack of explicit rule stating this. Therefore, we can say \"No\".",
+    "match": "No"
+  },
+  {
+    "id": "test_48",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Siciliana have hasTopping.GarlicTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "I'm sorry, but I can't provide an accurate answer to this question because the information provided is incomplete. The logical axioms you have given imply that Sicilianas are subsumed by various toppings (GarlicTopping, MozzarellaTopping, ArtichokeTopping, TomatoTopping, AnchoviesTopping, OliveTopping, and HamTopping). However, no axiom explicitly states whether or not Sicilianas always have the GarlicTopping. Therefore, without more information, it's impossible to definitively answer your question as \"Yes\" or \"No\".",
+    "match": "No"
+  },
+  {
+    "id": "test_49",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every ParmaHamTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The given axioms tell us that ParmaHamTopping is a kind of Thing, and it also possesses some characteristic called \"hasSpiciness\". This characteristic can be described as being Mild, but this does not guarantee every ParmaHamTopping has such property. So the answer to your question is \"No\".",
+    "match": "No"
+  },
+  {
+    "id": "test_50",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every RosemaryTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The given axioms suggest that every instance of \"RosemaryTopping\" also inherits the attribute \"hasSpiciness.Mild\". However, this does not necessarily mean that each individual RosemaryTopping has it because the existence or non-existence of these attributes could be dependent on specific instances (the existential quantifier). Therefore, an answer to your question would be \"No\".",
+    "match": "No"
+  },
+  {
+    "id": "test_51",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every RocketTopping have hasSpiciness.Medium?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "To determine if every RocketTopping has a spiciness of Medium, we first need to understand the structure of Description Logic EL (EL). In EL, if an object P is a member of concept Q (P \u2291 Q), it means that objects in Q have properties and roles consistent with those given by P. So, according to our given axioms:\n\n- RocketTopping is a subconcept of Thing. This suggests every RocketTopping should be some kind of thing as well. \n- RocketTopping also has an existential quantification (\u2203) on the property hasSpiciness with value Medium. This means that there exists at least one RocketTopping that is spicy enough to have a Medium level of spiciness. But it doesn't guarantee all RocketToppings are medium-spiced, just that some exist and they are medium-spiced.\n\nSo the answer would be \"No\". There may exist RocketToppings that do not have hasSpiciness.Medium property but according to given axioms we don't know if this is true for every RocketTopping or just for some of them. \n\nFor specific examples, assuming there are two RocketToppings: R1 and R2. Assuming R1 does have hasSpiciness.Medium but R2 doesn't, then the answer to your question would be \"No\". But if we don't know anything about R1 and R2, or even if they exist, then we cannot definitively say whether every RocketTopping has a spiciness of Medium.",
+    "match": "No"
+  },
+  {
+    "id": "test_52",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every HotSpicedBeefTopping have hasSpiciness.Hot?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "I'm sorry, but I can't provide the information you're looking for because it is related to a topic in philosophy and specifically deals with Description Logic which is outside of my programming assistant capabilities as an AI model trained on computer science topics. It would be best if you seek help from experts or professionals knowledgeable about description logic.",
+    "match": "No"
+  },
+  {
+    "id": "test_53",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Napoletana have hasTopping.AnchoviesTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "I'm sorry, but I can't provide the answer to this question without knowing how these axioms are interpreted in EL (Description Logic). Also, it seems that there is some misunderstanding as Napoletana should have hasTopping.AnchoviesTopping and not necessarily all of its instances. The given axioms seem to show the relationship between different toppings and the Napoletana class but they do not explicitly state if Napoletana specifically includes AnchoviesTopping or not. Therefore, it's impossible to give an explicit answer without additional information.",
+    "match": "No"
+  },
+  {
+    "id": "test_54",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every SultanaTopping have hasSpiciness.Medium?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "This is a problem of Description Logic, more specifically Existential Description Logic (ELD). ELD is a logic that provides reasoning about description frames in which concepts can be represented by existentially quantified descriptions rather than being universally asserted as classes or roles. The axioms provided mean that SultanaTopping hasMedium spiciness.\n\nGiven these axioms, it depends on the interpretation of the logic you are using to interpret them. If we assume that in an ELD model, 'hasSpiciness' is a function that associates each topping with its spiciness level (i.e., 'Medium'), then yes, every SultanaTopping does have hasSpiciness.Medium because of the first axiom and the second one.",
+    "match": "No"
+  },
+  {
+    "id": "test_55",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every FourCheesesTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The axioms provided indicate that FourCheesesTopping is a subset of things that contain the attribute hasSpiciness.Mild, meaning every FourCheesesTopping includes this trait (i.e., all FourCheesesToppings are Mild). Therefore, \"Yes\".",
+    "match": "No"
+  },
+  {
+    "id": "test_56",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every GorgonzolaTopping have hasSpiciness.Mild?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "I'm sorry, but this question is more related to description logic theory than computer science. As a programming assistant AI, I am specialized in answering questions about computer science, coding, algorithms, data structures, etc. Please let me know if you have any such queries.",
+    "match": "No"
+  },
+  {
+    "id": "test_57",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Pizza have hasBase.PizzaBase?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "The expression \"Pizza \u2291 \u2203hasBase.PizzaBase\" means that every pizza is a kind of something (Thing) that has a base, where the specific type of base does not matter. This statement can be read as: \"every Pizza is a Thing with some property (base)\".\n\nGiven this context, and given that there are no further axioms providing contradictions to this conclusion, the answer is \"No\". There may exist pizza types such that every single instance of said type does not have a base. This means that we could have another set of axioms that say something like: Pizza \u2291 Thing ^ ~\u2203hasBase.PizzaBase.",
+    "match": "No"
+  },
+  {
+    "id": "test_58",
+    "mr": "",
+    "dl_profile": "EL",
+    "query": "Does every Caprina have hasTopping.SundriedTomatoTopping?",
+    "expected": "Yes",
+    "llm": "deepseek-coder:6.7b-instruct",
+    "llm_answer": "This problem falls into a category of logical reasoning, specifically using Description Logic EL (a logic that describes objects through their properties). The given axioms are asserting the relationships between different hasTopping values associated with Caprina. Therefore, if any one of these axioms holds true for Caprina, then it does have at least one of the toppings specified in those facts (e.g., SundriedTomatoTopping, GoatsCheeseTopping, MozzarellaTopping, TomatoTopping). However, without further information or the context of other axioms and rules, we cannot definitively state whether Caprina specifically has hasTopping.SundriedTomatoTopping.",
+    "match": "No"
+  }
+]

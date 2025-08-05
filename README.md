@@ -11,15 +11,15 @@ This framework benchmarks the reasoning ability of large language models (LLMs) 
 ### 1. Extract EL-Only Ontology
 Run: `extract_EL.ipynb`
 
-This notebook extracts EL-profile axioms from a full ontology and saves them to:
+This notebook extracts EL-profile axioms from a full ontology, in this case, Pizza Ontology, and saves them to:
 
 `src/main/resources/ontology/pizza-el.owl`
 
 ---
 
-### 2. Generate EL Benchmark (MR-0)
+### 2. Generate EL Benchmark
 
-Compile and run: BenchmarkRunner.java
+Compile and run: `BenchmarkRunner.java`
  
 **What this does:**
 - Reads `pizza-el.owl`
@@ -74,7 +74,7 @@ Run: `evaluate_LLMs.py`
 
 - Java 17+ with OWL API library
 - Python 3.8+ with OpenAI, Google Gemini, or Hugging Face LLM APIs
-- Jupyter Notebook for `.ipynb` execution
+- Jupyter Notebook or Google Colaboratory (Colab) for `.ipynb` execution
 
 ---
 

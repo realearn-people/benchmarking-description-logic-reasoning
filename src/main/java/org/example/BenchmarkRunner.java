@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
  * - {@link ReasoningValidator} to check entailment
  * - {@link AxiomFormatter} to output human-readable symbolic/formal axiom representations
  *
- * The output is saved to `benchmark_output.json`, containing only original EL cases.
+ * The output is saved to `output_HermitReasoner/benchmark_output.json`, containing only original EL cases.
  */
 public class BenchmarkRunner {
 
@@ -55,6 +55,11 @@ public class BenchmarkRunner {
             if (target == null) continue; // Skip group if no target axiom found
 
             // Check if ontology entails this axiom
+            // boolean isValid = ReasoningValidator.isEntailed(ontology, target);
+
+            // Print timing and entailment comparison
+            ReasonerBenchmark.compareReasoners(ontology, target);
+            // Still use HermiT result for expected answer
             boolean isValid = ReasoningValidator.isEntailed(ontology, target);
 
             // Format each axiom as {symbolic, functional}
@@ -76,10 +81,10 @@ public class BenchmarkRunner {
 
         // Write output to json file
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        FileWriter writer = new FileWriter("benchmark_output.json");
+        FileWriter writer = new FileWriter("output_HermitReasoner/benchmark_output.json");
         gson.toJson(output, writer);
         writer.close();
 
-        System.out.println("Benchmark with only MR-0 (EL) exported to benchmark_output.json");
+        System.out.println("Benchmark with only EL exported to benchmark_output.json");
     }
 }

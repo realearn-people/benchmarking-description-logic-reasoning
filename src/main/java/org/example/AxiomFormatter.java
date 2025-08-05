@@ -22,10 +22,10 @@ public class AxiomFormatter {
         Map<String, String> formats = new HashMap<>();
 
         // Custom symbolic format
-        formats.put("symbolic", toSymbolicString(axiom));
+        formats.put("symbolic-format", toSymbolicString(axiom));
 
         // Functional (default OWL)
-        formats.put("functional", axiom.toString());
+        formats.put("OWL-format", axiom.toString());
 
         return formats;
     }
