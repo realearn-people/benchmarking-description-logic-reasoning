@@ -1,0 +1,155 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > ReasonerBenchmark</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.example</a>
+</div>
+
+<h1>Coverage Summary for Class: ReasonerBenchmark (org.example)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ReasonerBenchmark</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    88.5%
+  </span>
+  <span class="absValue">
+    (23/26)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package org.example;
+&nbsp;
+&nbsp;import org.semanticweb.HermiT.Reasoner;
+&nbsp;import org.semanticweb.owlapi.model.*;
+&nbsp;import org.semanticweb.owlapi.reasoner.*;
+&nbsp;
+&nbsp;import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
+&nbsp;
+<b class="nc">&nbsp;public class ReasonerBenchmark {</b>
+&nbsp;
+&nbsp;    public static void compareReasoners(OWLOntology ontology, OWLAxiom axiom) {
+&nbsp;        // === Structural Reasoner ===
+<b class="fc">&nbsp;        System.out.println(&quot;\n StructuralReasoner:&quot;);</b>
+<b class="fc">&nbsp;        OWLReasonerFactory structuralFactory = new StructuralReasonerFactory();</b>
+<b class="fc">&nbsp;        OWLReasoner structuralReasoner = structuralFactory.createReasoner(ontology);</b>
+&nbsp;        try {
+<b class="fc">&nbsp;            long start = System.nanoTime();</b>
+<b class="fc">&nbsp;            boolean entailed = structuralReasoner.isEntailed(axiom);</b>
+<b class="fc">&nbsp;            long end = System.nanoTime();</b>
+<b class="fc">&nbsp;            long durationNs = end - start;</b>
+<b class="fc">&nbsp;            long durationMs = durationNs / 1_000_000;</b>
+&nbsp;
+<b class="fc">&nbsp;            System.out.println(&quot;Entailed? &quot; + entailed);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;Time taken: &quot; + durationNs + &quot; ns (&quot; + durationMs + &quot; ms)&quot;);</b>
+&nbsp;        } catch (Exception e) {
+<b class="nc">&nbsp;            System.err.println(&quot;StructuralReasoner error: &quot; + e.getMessage());</b>
+&nbsp;        } finally {
+<b class="fc">&nbsp;            structuralReasoner.dispose();</b>
+&nbsp;        }
+&nbsp;
+&nbsp;        // === HermiT Reasoner ===
+<b class="fc">&nbsp;        System.out.println(&quot;\n HermiT Reasoner:&quot;);</b>
+<b class="fc">&nbsp;        OWLReasonerFactory hermitFactory = new Reasoner.ReasonerFactory();</b>
+<b class="fc">&nbsp;        OWLReasoner hermitReasoner = hermitFactory.createReasoner(ontology);</b>
+&nbsp;        try {
+<b class="fc">&nbsp;            long start = System.nanoTime();</b>
+<b class="fc">&nbsp;            hermitReasoner.precomputeInferences(); // Optional but recommended</b>
+<b class="fc">&nbsp;            boolean entailed = hermitReasoner.isEntailed(axiom);</b>
+<b class="fc">&nbsp;            long end = System.nanoTime();</b>
+<b class="fc">&nbsp;            long durationNs = end - start;</b>
+<b class="fc">&nbsp;            long durationMs = durationNs / 1_000_000;</b>
+&nbsp;
+<b class="fc">&nbsp;            System.out.println(&quot;Entailed? &quot; + entailed);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;Time taken: &quot; + durationNs + &quot; ns (&quot; + durationMs + &quot; ms)&quot;);</b>
+&nbsp;        } catch (Exception e) {
+<b class="nc">&nbsp;            System.err.println(&quot;HermiT error: &quot; + e.getMessage());</b>
+&nbsp;        } finally {
+<b class="fc">&nbsp;            hermitReasoner.dispose();</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-08-06 13:41</div>
+</div>
+</body>
+</html>

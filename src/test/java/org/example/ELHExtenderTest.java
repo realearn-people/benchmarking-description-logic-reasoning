@@ -24,8 +24,8 @@ class ELHExtenderTest {
 
         JsonArray axioms = new JsonArray();
         JsonObject axiom = new JsonObject();
-        axiom.addProperty("symbolic", "Car ⊑ ∃hasPart.Engine");
-        axiom.addProperty("functional", "SubClassOf(Car ObjectSomeValuesFrom(hasPart Engine))");
+        axiom.addProperty("symbolic-format", "Car ⊑ ∃hasPart.Engine");
+        axiom.addProperty("OWL-format", "SubClassOf(Car ObjectSomeValuesFrom(hasPart Engine))");
         axioms.add(axiom);
 
         testCase.add("axioms", axioms);
@@ -53,7 +53,7 @@ class ELHExtenderTest {
 
         boolean foundRoleHierarchy = false;
         for (JsonElement axEl : updatedAxioms) {
-            String sym = axEl.getAsJsonObject().get("symbolic").getAsString();
+            String sym = axEl.getAsJsonObject().get("symbolic-format").getAsString();
             if (sym.equals("hasPart ⊑ superOfHasPart")) {
                 foundRoleHierarchy = true;
                 break;

@@ -1,0 +1,146 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > ReasoningValidator</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.example</a>
+</div>
+
+<h1>Coverage Summary for Class: ReasoningValidator (org.example)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ReasoningValidator</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    70%
+  </span>
+  <span class="absValue">
+    (7/10)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package org.example;
+&nbsp;
+&nbsp;import org.semanticweb.HermiT.Reasoner;
+&nbsp;import org.semanticweb.owlapi.model.*;
+&nbsp;import org.semanticweb.owlapi.reasoner.*;
+&nbsp;import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
+&nbsp;
+&nbsp;//import org.semanticweb.owlapi.model.*;
+&nbsp;//import org.semanticweb.owlapi.reasoner.OWLReasoner;
+&nbsp;//import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
+&nbsp;//import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
+&nbsp;
+<b class="nc">&nbsp;public class ReasoningValidator {</b>
+&nbsp;
+&nbsp;    /**
+&nbsp;     * Validates if an axiom is entailed by the ontology using a Structural Reasoner/ HermiT Reasoner.
+&nbsp;     *
+&nbsp;     * @param ontology the OWL ontology
+&nbsp;     * @param axiom the OWL axiom to check
+&nbsp;     * @return true if the axiom is entailed, false otherwise
+&nbsp;     */
+&nbsp;    public static boolean isEntailed(OWLOntology ontology, OWLAxiom axiom) {
+<b class="fc">&nbsp;        OWLReasonerFactory reasonerFactory = new Reasoner.ReasonerFactory(); // Structural Reasoner: new StructuralReasonerFactory()</b>
+<b class="fc">&nbsp;        OWLReasoner reasoner = reasonerFactory.createReasoner(ontology);</b>
+<b class="fc">&nbsp;        boolean entailed = false;</b>
+&nbsp;
+&nbsp;        try {
+<b class="fc">&nbsp;            reasoner.precomputeInferences(); // Optional but helps for performance</b>
+&nbsp;            // Check entailment of the given axiom
+<b class="fc">&nbsp;            entailed = reasoner.isEntailed(axiom);</b>
+&nbsp;        } catch (Exception e) {
+&nbsp;            // Handle reasoning errors or exceptions (e.g., memory issues, ontology parsing errors)
+<b class="nc">&nbsp;            System.err.println(&quot;Reasoning error: &quot; + e.getMessage());</b>
+<b class="nc">&nbsp;            e.printStackTrace();  // print stack trace for debugging</b>
+&nbsp;        } finally {
+&nbsp;            // Ensure the reasoner is disposed of after use
+<b class="fc">&nbsp;            reasoner.dispose();</b>
+&nbsp;        }
+&nbsp;
+<b class="fc">&nbsp;        return entailed;</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-08-06 13:41</div>
+</div>
+</body>
+</html>

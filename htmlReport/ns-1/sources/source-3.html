@@ -1,0 +1,206 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > BenchmarkRunner</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.example</a>
+</div>
+
+<h1>Coverage Summary for Class: BenchmarkRunner (org.example)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">BenchmarkRunner</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/29)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package org.example;
+&nbsp;
+&nbsp;import com.google.gson.Gson;
+&nbsp;import com.google.gson.GsonBuilder;
+&nbsp;import org.semanticweb.owlapi.apibinding.OWLManager;
+&nbsp;import org.semanticweb.owlapi.model.*;
+&nbsp;
+&nbsp;import java.io.File;
+&nbsp;import java.io.FileWriter;
+&nbsp;import java.util.*;
+&nbsp;import java.util.stream.Collectors;
+&nbsp;
+&nbsp;/**
+&nbsp; * BenchmarkRunner generates EL-profile reasoning benchmark test cases from an OWL ontology.
+&nbsp; *
+&nbsp; * It uses:
+&nbsp; * - {@link AxiomGrouper} to group axioms by subject
+&nbsp; * - {@link QueryGenerator} to create NL queries
+&nbsp; * - {@link ReasoningValidator} to check entailment
+&nbsp; * - {@link AxiomFormatter} to output human-readable symbolic/formal axiom representations
+&nbsp; *
+&nbsp; * The output is saved to `output_HermitReasoner/benchmark_output.json`, containing only original EL cases.
+&nbsp; */
+<b class="nc">&nbsp;public class BenchmarkRunner {</b>
+&nbsp;
+&nbsp;    /**
+&nbsp;     * Main method to run the EL benchmark generation process.
+&nbsp;     *
+&nbsp;     * @param args Command-line arguments (unused)
+&nbsp;     * @throws Exception if ontology loading or file writing fails
+&nbsp;     */
+&nbsp;    public static void main(String[] args) throws Exception {
+&nbsp;        // load the ontology
+<b class="nc">&nbsp;        OWLOntologyManager manager = OWLManager.createOWLOntologyManager();</b>
+<b class="nc">&nbsp;        File file = new File(&quot;src/main/resources/ontology/pizza-el.owl&quot;);</b>
+<b class="nc">&nbsp;        OWLOntology ontology = manager.loadOntologyFromOntologyDocument(file);</b>
+&nbsp;
+&nbsp;        // group axioms by named individual or class subject
+<b class="nc">&nbsp;        Map&lt;String, List&lt;OWLAxiom&gt;&gt; groups = AxiomGrouper.groupBySubject(ontology);</b>
+&nbsp;
+&nbsp;        // output container
+<b class="nc">&nbsp;        List&lt;Map&lt;String, Object&gt;&gt; output = new ArrayList&lt;&gt;();</b>
+<b class="nc">&nbsp;        int idCounter = 1;</b>
+&nbsp;
+<b class="nc">&nbsp;        for (Map.Entry&lt;String, List&lt;OWLAxiom&gt;&gt; entry : groups.entrySet()) {</b>
+<b class="nc">&nbsp;            String subject = entry.getKey();</b>
+<b class="nc">&nbsp;            List&lt;OWLAxiom&gt; axioms = entry.getValue();</b>
+&nbsp;
+&nbsp;            // generate natural language query from the group
+<b class="nc">&nbsp;            String query = QueryGenerator.generateQuery(axioms);</b>
+&nbsp;
+&nbsp;            // Identify the key axiom to validate (used in &quot;expected&quot; answer)
+<b class="nc">&nbsp;            OWLAxiom target = QueryGenerator.getQueryAxiom(axioms); // Axiom to validate</b>
+&nbsp;
+<b class="nc">&nbsp;            if (target == null) continue; // Skip group if no target axiom found</b>
+&nbsp;
+&nbsp;            // Check if ontology entails this axiom
+&nbsp;            // boolean isValid = ReasoningValidator.isEntailed(ontology, target);
+&nbsp;
+&nbsp;            // Print timing and entailment comparison
+<b class="nc">&nbsp;            ReasonerBenchmark.compareReasoners(ontology, target);</b>
+&nbsp;            // Still use HermiT result for expected answer
+<b class="nc">&nbsp;            boolean isValid = ReasoningValidator.isEntailed(ontology, target);</b>
+&nbsp;
+&nbsp;            // Format each axiom as {symbolic, functional}
+<b class="nc">&nbsp;            List&lt;Map&lt;String, String&gt;&gt; formatted = axioms.stream()</b>
+<b class="nc">&nbsp;                    .map(AxiomFormatter::formatAxiom)</b>
+<b class="nc">&nbsp;                    .collect(Collectors.toList());</b>
+&nbsp;
+&nbsp;            // Create a benchmark entry EL only
+<b class="nc">&nbsp;            Map&lt;String, Object&gt; base = new LinkedHashMap&lt;&gt;();</b>
+<b class="nc">&nbsp;            base.put(&quot;id&quot;, &quot;test_&quot; + idCounter++);</b>
+&nbsp;            //base.put(&quot;mr&quot;, &quot;MR-0&quot;);
+<b class="nc">&nbsp;            base.put(&quot;dl_profile&quot;, &quot;EL&quot;);</b>
+<b class="nc">&nbsp;            base.put(&quot;axioms&quot;, formatted);</b>
+<b class="nc">&nbsp;            base.put(&quot;query&quot;, query);</b>
+<b class="nc">&nbsp;            base.put(&quot;expected&quot;, isValid ? &quot;Yes&quot; : &quot;No&quot;);</b>
+&nbsp;
+<b class="nc">&nbsp;            output.add(base);  // Add to final output</b>
+&nbsp;        }
+&nbsp;
+&nbsp;        // Write output to json file
+<b class="nc">&nbsp;        Gson gson = new GsonBuilder().setPrettyPrinting().create();</b>
+<b class="nc">&nbsp;        FileWriter writer = new FileWriter(&quot;output_HermitReasoner/benchmark_output.json&quot;);</b>
+<b class="nc">&nbsp;        gson.toJson(output, writer);</b>
+&nbsp;        writer.close();
+&nbsp;
+<b class="nc">&nbsp;        System.out.println(&quot;Benchmark with only EL exported to benchmark_output.json&quot;);</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-08-06 13:41</div>
+</div>
+</body>
+</html>
