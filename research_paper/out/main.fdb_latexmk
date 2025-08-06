@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex out/main"] 1753981572.78053 "out/main.aux" "out/main.bbl" "out/main" 1753981573.87479 0
-  "./references.bib" 1753959614.21284 6677 825cd01582a2abbb7f366e67db159521 ""
+["bibtex out/main"] 1754448255.56273 "out/main.aux" "out/main.bbl" "out/main" 1754448256.55095 0
+  "./references.bib" 1754448254.40541 7024 795747e187fda62c247325d38b8ec9f4 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "out/main.aux" 1753981573.60384 5383 3fb8cd6b47eed5593393e8136c547261 "pdflatex"
+  "out/main.aux" 1754448256.29489 5442 be8b9cc45eadcfbdf32812e9cf79290d "pdflatex"
   (generated)
   "out/main.bbl"
   "out/main.blg"
   (rewritten before read)
-["pdflatex"] 1753981572.88975 "/Users/phanphum/Desktop/Research Paper/main.tex" "out/main.pdf" "main" 1753981573.87493 0
-  "/Users/phanphum/Desktop/Research Paper/main.tex" 1753981571.56842 22030 07527c4ddfb323ecc3cf3efead680ba5 ""
+["pdflatex"] 1754448255.66404 "/Users/phanphum/Desktop/DLReasoningBenchmark/research_paper/main.tex" "out/main.pdf" "main" 1754448256.55107 0
+  "/Users/phanphum/Desktop/DLReasoningBenchmark/research_paper/main.tex" 1754448130.01826 22047 e190c8d05b11518e7dd724f5d9862d3e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -178,10 +178,10 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1753849471 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1753849401 3345740 10b653461e01b3d02ffaad33c6b777e5 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "main.tex" 1753981571.56842 22030 07527c4ddfb323ecc3cf3efead680ba5 ""
-  "out/main.aux" 1753981573.60384 5383 3fb8cd6b47eed5593393e8136c547261 "pdflatex"
-  "out/main.bbl" 1753981572.88464 5091 73b53bd558d2f73c68090a0c1b863246 "bibtex out/main"
-  "out/main.out" 1753981573.60644 4117 27967a30817dd72950e7b99ba1c6120c "pdflatex"
+  "main.tex" 1754448130.01826 22047 e190c8d05b11518e7dd724f5d9862d3e ""
+  "out/main.aux" 1754448256.29489 5442 be8b9cc45eadcfbdf32812e9cf79290d "pdflatex"
+  "out/main.bbl" 1754448255.65928 5333 5a436f87165d555bad934602f48bae57 "bibtex out/main"
+  "out/main.out" 1754448256.29588 4117 27967a30817dd72950e7b99ba1c6120c "pdflatex"
   (generated)
   "out/main.aux"
   "out/main.log"

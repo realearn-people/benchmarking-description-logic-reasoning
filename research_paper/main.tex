@@ -34,7 +34,7 @@ While prior work has tested LLMs on symbolic reasoning and natural language infe
 The framework extracts EL axioms from the Pizza ontology\cite{stanford2025pizza, horridge2004pizza} and extends them with role inclusion to create ELH-compliant cases, thereby increasing DL complexity. It then generates corresponding natural language queries, and compares model responses to formal entailment outcomes using the OWL API\cite{owlapi} and HermiT reasoner\cite{hermit2007, glimm2014hermit}. 
 We evaluate seven LLMs, including GPT-4o\cite{gpt4o}, Gemini 2.5 Pro\cite{gemini}, LLaMA 3\cite{llama3}, and Gemma 2\cite{gemma3}, Mistral\cite{mistral}, Qwen\cite{qwen7b}, and DeepSeek Coder\cite{deepseekcoder} and analyze their accuracy, behavior under increasing DL complexity (moving from EL to ELH), and stability. The results reveal varying levels of robustness across models, with Gemma 2 achieving perfect EL reasoning performance, 
 and others such as GPT-4o exhibiting performance degradation in ELH settings. 
-This initial framework and its findings lay the groundwork for future investigations into symbolic reasoning capabilities of LLMs, including the application of formal metamorphic testing\cite{chen2018metamorphic}.
+This initial framework and its findings lay the groundwork for future investigations into symbolic reasoning capabilities of LLMs, including the application of formal metamorphic testing\cite{racharak2025test,chen2018metamorphic}.
 \end{abstract}
 
 \section{Introduction}
