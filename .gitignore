@@ -41,4 +41,6 @@ out/
 *.pdf
 
 # But keep the final paper PDF
+!research_paper/
+!research_paper/out/
 !research_paper/out/main.pdf
