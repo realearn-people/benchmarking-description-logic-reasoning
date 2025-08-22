@@ -26,7 +26,7 @@ OUTPUT_FILE_ELH = "../results_{model}_elh.json"
 # === 3. Prompt Builder ===
 def build_prompt(entry):
     axioms = entry["axioms"]
-    axioms_text = axioms if isinstance(axioms, str) else "\n".join(f"- {ax['symbolic']}" for ax in axioms)
+    axioms_text = axioms if isinstance(axioms, str) else "\n".join(f"- {ax['symbolic-format']}" for ax in axioms)
 
     dl_profile = entry.get("dl_profile", "unknown")
     if dl_profile == "EL":
@@ -135,7 +135,7 @@ def evaluate(input_file, output_file, model_name):
 
 # === 6. Runner ===
 if __name__ == "__main__":
-    models = ["qwen:7b"]
+    models = ["gpt-4o", "gemini-2.5-pro", "llama3:latest", "gemma3:latest", "deepseek-coder:6.7b-instruct", "qwen:7b", "mistral:latest"]
     #"gpt-4o", "gemini-2.5-pro", "llama3:latest", "gemma3:latest", "deepseek-coder:6.7b-instruct", "qwen:7b", "mistral:latest"
 
     for model in models:

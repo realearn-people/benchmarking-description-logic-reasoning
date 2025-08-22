@@ -56,26 +56,26 @@ Current scope:     <a href="../../index.html">all classes</a>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    50%
+    60%
   </span>
   <span class="absValue">
-    (5/10)
+    (6/10)
   </span>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    21.4%
+    35.7%
   </span>
   <span class="absValue">
-    (3/14)
+    (5/14)
   </span>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    37.1%
+    48.6%
   </span>
   <span class="absValue">
-    (13/35)
+    (17/35)
   </span>
 </td>
 </tr>
@@ -185,10 +185,10 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;    // formats class expressions, such as existential quantification (∃property.class) or role inversions (property^-1)
 &nbsp;    private static String formatClassExpression(OWLClassExpression expr) {
 &nbsp;        // // Check for existential quantification: ∃R.C
-<b class="pc">&nbsp;        if (expr instanceof OWLObjectSomeValuesFrom some) {</b>
-<b class="nc">&nbsp;            String prop = extractName(some.getProperty()); // e.g., hasTopping</b>
-<b class="nc">&nbsp;            String filler = extractName(some.getFiller()); // e.g., Mozzarella</b>
-<b class="nc">&nbsp;            return &quot;∃&quot; + prop + &quot;.&quot; + filler;</b>
+<b class="fc">&nbsp;        if (expr instanceof OWLObjectSomeValuesFrom some) {</b>
+<b class="fc">&nbsp;            String prop = extractName(some.getProperty()); // e.g., hasTopping</b>
+<b class="fc">&nbsp;            String filler = extractName(some.getFiller()); // e.g., Mozzarella</b>
+<b class="fc">&nbsp;            return &quot;∃&quot; + prop + &quot;.&quot; + filler;</b>
 &nbsp;        }
 &nbsp;
 &nbsp;        // For named classes or unsupported expressions, return readable name or fallback
@@ -210,7 +210,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;     * If anonymous, returns a placeholder.
 &nbsp;     */
 &nbsp;    private static String extractName(OWLObjectPropertyExpression propExpr) {
-<b class="nc">&nbsp;        if (!propExpr.isAnonymous()) return propExpr.asOWLObjectProperty().getIRI().getShortForm();</b>
+<b class="pc">&nbsp;        if (!propExpr.isAnonymous()) return propExpr.asOWLObjectProperty().getIRI().getShortForm();</b>
 <b class="nc">&nbsp;        return &quot;AnonymousProperty&quot;;</b>
 &nbsp;    }
 &nbsp;
@@ -248,7 +248,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2025-08-06 13:41</div>
+    <div style="float:right;">generated on 2025-08-06 15:16</div>
 </div>
 </body>
 </html>
