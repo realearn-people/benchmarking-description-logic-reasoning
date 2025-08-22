@@ -17,12 +17,28 @@ target/
 __pycache__/
 *.pyc
 
-# Ignore LaTeX build files
+# Ignore all LaTeX build outputs
 *.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
 *.log
 *.out
 *.toc
-*.bbl
-*.blg
+*.lof
+*.lot
+*.idx
+*.ilg
+*.ind
+*.glo
+*.gls
 *.synctex.gz
-#*.pdf
+_minted-*/
+out/
+
+# Ignore all PDFs by default
+*.pdf
+
+# But keep the final paper PDF
+!research_paper/out/main.pdf
