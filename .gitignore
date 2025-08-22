@@ -25,4 +25,4 @@ __pycache__/
 *.bbl
 *.blg
 *.synctex.gz
-*.pdf
+#*.pdf
